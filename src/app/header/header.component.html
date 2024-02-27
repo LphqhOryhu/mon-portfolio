@@ -1,0 +1,20 @@
+<header class="header p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo et icône pour le menu mobile -->
+      <button (click)="onToggleSidebar()">Toggle Sidebar</button>
+      
+      <!-- Liens de navigation -->
+      <nav class="nav-links hidden md:flex">
+        <a href="/about" class="nav-item">À propos</a>
+        <a href="/projects" class="nav-item">Projets</a>
+        <a href="/contact" class="nav-item">Contact</a>
+      </nav>
+      <!-- Icône de menu pour les mobiles -->
+      <div class="md:hidden">
+        <button>
+          <!-- Icône de menu ici -->
+        </button>
+      </div>
+    </div>
+  </header>
+  

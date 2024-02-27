@@ -1,0 +1,12 @@
+.sidebar {
+    @apply bg-gray-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out;
+  }
+  
+  .sidebar-item {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
+  }
+  
+  .sidebar-header {
+    @apply text-gray-100 text-lg font-semibold px-3;
+  }
+  
