@@ -1,6 +1,17 @@
 <app-header></app-header>
 <div>
     <app-sidebar></app-sidebar>
-    <app-main-content></app-main-content>
+    @if(componentToShow === 'stage'){
+        <app-stage></app-stage>
+    }
+    @if(componentToShow === 'veille'){
+        <app-veille></app-veille>
+    }
+    @if(componentToShow === 'compétences'){
+        <app-competences></app-competences>
+    }
+    @if(componentToShow === 'main'){
+        <app-main-content></app-main-content>
+    }
     <app-breadcrumb></app-breadcrumb>
 </div>

@@ -28,4 +28,9 @@ export class SidebarComponent implements OnInit, OnDestroy {
       this.subscription.unsubscribe();
     }
   }
+
+  showComponent(component: string): void {
+    this.sidebarService.toggleSidebar(); 
+    this.sidebarService.updateComponentToShow(component); // Met à jour le composant à afficher
+  }
 }

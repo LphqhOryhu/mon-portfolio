@@ -4,10 +4,10 @@
           Menu
         </div>
         <nav class="flex-col flex">
-          <a href="#" class="sidebar-item">Accueil</a>
-          <a href="#" class="sidebar-item">À propos</a>
-          <a href="#" class="sidebar-item">Projets</a>
-          <a href="#" class="sidebar-item">Contact</a>
+          <a href="#" class="sidebar-item" (click)="showComponent('main')">Acceuil</a>
+          <a href="#" class="sidebar-item" (click)="showComponent('stage')">Stage</a>
+          <a href="#" class="sidebar-item" (click)="showComponent('compétences')">Compétences</a>
+          <a href="#" class="sidebar-item" (click)="showComponent('veille')">Veille</a>
         </nav>
     </aside>
 }
