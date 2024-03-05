@@ -1,1 +1,13 @@
-<p>Veille</p>
+<div class="mt-5 space-y-5">
+    @for (veille of veilles; track veilles) {
+      <div class="border p-4 rounded-lg shadow-lg bg-white">
+        <h3 class="text-xl font-bold text-gray-800">{{ veille.titre }}</h3>
+        <p class="mt-1 text-gray-600"><strong>Auteur:</strong> {{ veille.auteur }}</p>
+        <p class="mt-1 text-gray-600">{{ veille.resume }}</p>
+        <p class="mt-1 text-gray-600"><strong>Date:</strong> {{ veille.date}}</p>
+        <p class="mt-1 text-gray-600"><strong>Bornage:</strong> {{ veille.bornage }}</p>
+        <a href="{{ veille.url }}" target="_blank" class="mt-2 inline-block text-blue-500 hover:text-blue-600">Lire la suite</a>
+      </div>
+    }
+  </div>
+  
