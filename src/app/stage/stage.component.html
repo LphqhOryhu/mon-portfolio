@@ -1,62 +1,116 @@
-<div class="mt-24">
-    <div class="flex gap-x-2">
-        <button class="btn btn-primary" (click)="selectOption('Flazio')">Flazio</button>
-        <button class="btn btn-primary" (click)="selectOption('SGA')">SGA</button>
+<div class="mt-24 w-screen px-4">
+    <div class="flex gap-x-2 items-center justify-center">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="selectOption('Flazio')">Flazio</button>
+        <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="selectOption('SGA')">SGA</button>
     </div>  
 
     @if(showModalFlazio){
-        <div>
-            <div class="">Flazio</div>
-            <div class="">
-                <div class="modal-body">
-                    <p>Voulez-vous voir plus de contenu sur Flazio ?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" (click)="closeModals()">Fermer</button>
-                    <button class="btn" (click)="viewMoreFlazio()">Voir Plus sur Flazio</button>
-                </div>
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+            <div class="font-bold">Flazio</div>
+            <div class="modal-body mt-4">
+                <p>Voulez-vous voir plus de contenu sur Flazio ?</p>
+            </div>
+            <div class="modal-footer flex gap-x-2 mt-4">
+                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="viewMoreFlazio()">Voir Plus sur Flazio</button>
             </div>
         </div>
-
     }
 
-
     @if(showModalSGA){
-        <div>
-            <div class="">SGA</div>
-            <div class="modal-body">
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+            <div class="font-bold">SGA</div>
+            <div class="modal-body mt-4">
                 <p>Voulez-vous voir plus de contenu sur SGA ?</p>
             </div>
-            <div class="modal-footer">
-                <button class="btn" (click)="closeModals()">Fermer</button>
-                <button class="btn" (click)="viewMoreSGA()">Voir Plus sur SGA</button>
+            <div class="modal-footer flex gap-x-2 mt-4">
+                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
+                <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="viewMoreSGA()">Voir Plus sur SGA</button>
             </div>
         </div>
     }
 
     @if(showMoreFlazio){
-        <div>
-            <div class="modal-header">Plus sur Flazio</div>
-            <div class="modal-body">
-                <p>Contenu supplémentaire spécifique à Flazio...</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn" (click)="closeModals()">Fermer</button>
-            </div>
-        </div>
-    }
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+            <h2 class="font-bold text-lg mb-4">Plus sur Flazio</h2>
+            <h3 class="font-bold">Rapport de Stage - Stage Erasmus+</h3>
+            <p><strong>Hugo DE BRABANDER</strong></p>
+            <p>1 SIO A</p>
+            <p>28. juil. 2023</p>
+            
+            <h4 class="font-semibold mt-4">Sommaire</h4>
+            <ul class="list-disc ml-6">
+                <li>A - L’entreprise</li>
+                <ul class="list-disc ml-6">
+                    <li>A.1 - Contexte</li>
+                    <li>A.2 - Environnement technologique de l'entreprise</li>
+                </ul>
+                <li>B - Organisation du projet</li>
+                <li>C - Les missions & projet</li>
+                <ul class="list-disc ml-6">
+                    <li>C.1 - La traduction de documents / site</li>
+                    <li>C.2 - La classification de sites web</li>
+                    <li>C.3 - La création d'un site web pour gérer des revendeurs</li>
+                </ul>
+                <li>D - Conclusion</li>
+            </ul>
+            
+            <div class="mt-4">
+                <p><strong>A - L’ENTREPRISE</strong></p>
+                <p><strong>A.1 - Contexte</strong></p>
+                <p>Dans le cadre du programme Erasmus+, j'ai effectué mon stage de 1re année à l'étranger, plus précisément à Catane en Italie, dans l’entreprise Flazio. Du au programme Erasmus+ plus mon stage a duré plus longtemps que la moyenne soit 2 mois du 23/05/2023 au 21/07/23. L'entreprise Flazio a été fondée en 2012 par Flavio Fazio :</p>
+                
+                <p>Son objectif est de créer un CMS équivalent à Wix ou WordPress. Pour cela, Flazio a réussi à créer une interface utilisateur fluide et facile à utiliser, permettant à des personnes sans connaissances en développement de créer très simplement des sites web, tels que des sites de vente en ligne ou même des sites de réservation. Cependant, si vous avez besoin d'un site plus personnalisé avec des fonctionnalités qui ne sont pas encore implémentées, ou si vous préférez ne pas vous embêter à le faire vous-même, l'entreprise dispose d'une équipe dédiée à la construction de ce genre de site.</p>
+                
+                <p>La clientèle de Flazio ne se limite pas à l'Italie, elle est internationale. Pour cette raison, Flazio s'est équipé d'un système de traduction automatique pour son site et ceux de ses clients. Durant ce stage, j’ai été assigné à plusieurs services, le service communication puis le service développement.</p>
+                <p><strong>A.2 - Environnement technologique de l'entreprise</strong></p>
+<p>L'entreprise est entièrement équipée de pc portables MacBook. Le service communication utilise des logiciels tels que la suite Adobe et la suite Google Workspace pour la création de documents. Le service développement se base principalement sur Visual Studio Code pour le développement. Le CMS de Flazio est développé en HTML, CSS et JavaScript pour le frontend du site, et en PHP pour le backend.</p>
 
+<p>Concernant l'architecture du site ainsi que les informations relatives à leurs serveurs, nous n'en avons pas connaissance. Tout ce que nous savons, c'est que l'entreprise utilise Google Cloud pour héberger leurs serveurs, ainsi que ceux de leurs clients.</p>
+
+<h4 class="font-semibold mt-4">B - Organisation du projet</h4>
+            </div>
+    
+           
+            <p>Pendant ces 2 mois de stage, nous avons eu l'occasion de nous investir dans plusieurs missions et projets d'envergure qui nous ont permis de nous familiariser avec l'entreprise :</p>
+
+<ul class="list-disc ml-6">
+    <li>La traduction de documents / site : L'une de nos missions consistait à traduire des documents et le site web de l’entreprise en français. Cette tâche nous a non seulement permis d'améliorer nos compétences linguistiques, mais aussi de comprendre l'importance de l'accessibilité pour toucher un public plus large.</li>
+    <li>La classification de sites web : Une autre mission captivante consistait à classer des sites web dans différentes catégories : la catégorie "SPAM" pour les sites vides ou de test, la catégorie "SCAM" pour les sites frauduleux, et enfin la catégorie "NORMAL" pour les sites légitimes dont l'utilisation était avérée. Ce travail nous a offert l'opportunité de développer notre sens de l'organisation et de l'automatisation, ainsi que notre capacité à analyser méthodiquement les informations.</li>
+    <li>La création d'un site web pour gérer des revendeurs : Un projet majeur auquel nous avons été assigné était la conception et la création d'un site web dédié à la gestion des revendeurs de l'entreprise. Cette tâche nous a confrontés à des défis techniques et créatifs.</li>
+</ul>
+
+<p><strong>D - Conclusion</strong></p>
+<p>Mon stage de premier année chez Flazio dans le cadre du programme Erasmus+ à Catane en Sicile a été une expérience enrichissante tant sur le plan professionnel que personnel. Au cours de ces deux mois, j'ai eu l'opportunité de me plonger dans l'univers d'une entreprise dynamique et innovante, et de contribuer à divers projets stimulants.</p>
+<div class="modal-footer flex gap-x-2 mt-4">
+    <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
+</div>
+        </div>
+        
+    }
     @if(showMoreSGA){
-        <div>
-           <div class="modal-header">Plus sur SGA</div>
-        <div class="modal-body">
-            <p>Contenu supplémentaire spécifique à SGA...</p>
-        </div>
-        <div class="modal-footer">
-            <button class="btn" (click)="closeModals()">Fermer</button>
-        </div>
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+            <h2 class="font-bold text-lg mb-4">Plus sur SGA</h2>
+            <h3 class="font-bold">L'entreprise</h3>
+            <p><strong>Contexte du stage:</strong> Mon stage au sein de SGA INDUSTRIES s'est déroulé du 15 janvier au 23 février 2024, axé sur l'innovation au sein du département de développement de l'entreprise...</p>
+            
+            <h3 class="font-bold mt-4">Environnement technologique de l’entreprise</h3>
+            <p>SGA INDUSTRIES utilise des postes fixes équipés de Debian. Les outils de développement privilégiés incluent Visual Studio Code pour le code source et Figma pour la conception d'interfaces...</p>
+            
+            <h3 class="font-bold mt-4">Organisation du projet</h3>
+            <p>L'organisation du travail s'articule autour de réunions bihebdomadaires et l'utilisation de Trello pour la gestion de projet visuel...</p>
+            
+            <h3 class="font-bold mt-4">Description des projets</h3>
+            <p>Les projets sur lesquels j'ai travaillé incluent le changement graphique et le passage responsive de la réservation, l'ajout de conditions d'accès spécifiques, et plus encore...</p>
+            
+            <h3 class="font-bold mt-4">Conclusion</h3>
+            <p>Mon stage chez SGA INDUSTRIES a été une expérience exceptionnelle qui m'a permis de développer mes compétences techniques et interpersonnelles...</p>
+            
+                    
+            <div class="modal-footer flex gap-x-2 mt-4">
+                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
+            </div>
         </div>
     }
-
     
 </div>
