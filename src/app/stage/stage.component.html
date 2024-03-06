@@ -1,1 +1,62 @@
-<p class="mt-16">Stage</p>
+<div class="mt-24">
+    <div class="flex gap-x-2">
+        <button class="btn btn-primary" (click)="selectOption('Flazio')">Flazio</button>
+        <button class="btn btn-primary" (click)="selectOption('SGA')">SGA</button>
+    </div>  
+
+    @if(showModalFlazio){
+        <div>
+            <div class="">Flazio</div>
+            <div class="">
+                <div class="modal-body">
+                    <p>Voulez-vous voir plus de contenu sur Flazio ?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" (click)="closeModals()">Fermer</button>
+                    <button class="btn" (click)="viewMoreFlazio()">Voir Plus sur Flazio</button>
+                </div>
+            </div>
+        </div>
+
+    }
+
+
+    @if(showModalSGA){
+        <div>
+            <div class="">SGA</div>
+            <div class="modal-body">
+                <p>Voulez-vous voir plus de contenu sur SGA ?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" (click)="closeModals()">Fermer</button>
+                <button class="btn" (click)="viewMoreSGA()">Voir Plus sur SGA</button>
+            </div>
+        </div>
+    }
+
+    @if(showMoreFlazio){
+        <div>
+            <div class="modal-header">Plus sur Flazio</div>
+            <div class="modal-body">
+                <p>Contenu supplémentaire spécifique à Flazio...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" (click)="closeModals()">Fermer</button>
+            </div>
+        </div>
+    }
+
+    @if(showMoreSGA){
+        <div>
+           <div class="modal-header">Plus sur SGA</div>
+        <div class="modal-body">
+            <p>Contenu supplémentaire spécifique à SGA...</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" (click)="closeModals()">Fermer</button>
+        </div>
+        </div>
+    }
+
+    
+</div>
