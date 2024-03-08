@@ -5,7 +5,7 @@
         <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.1 - Gérer le patrimoine informatique</h2>
         <div class="flex justify-between">
             <span>W3C - Mars 2023</span>
-            <a href="#" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            <a href="#" (click)="enregistrerPreuve('W3C')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
         </div>
         <hr class="h-px  bg-gray-400 border-0 " />
         <div class="flex justify-between">
@@ -102,8 +102,28 @@
     
 
     </div>
-    <div class="mt-20 right-0 fixed">
-        <p>azczhkgczaclaz</p>
-        <p>ac</p>
+    <div class="mt-20 right-3 fixed border-2 border-black h-[635px] w-[750px] rounded-md">
+
+        @if(dernierePreuveClique === ''){
+            <div class="">
+
+                <p>PREUVE ICI</p>
+            </div>
+        }
+
+
+        @if(dernierePreuveClique === 'W3C'){
+            <div class="space-y-4">
+                <p class="text-sm text-gray-700">Durant ma première année de BTS SIO, j'ai découvert ce qu'était le W3C. J'ai pris par la suite l'habitude de vérifier mes pages grâce à un site web qui suivait ces règles.</p>
+                <div class="space-y-2">
+                  <p class="font-bold">Ma page avant le W3C</p>
+                  <!-- Remplacer "path-to-your-image-before" par le chemin vers votre image avant l'application des règles du W3C -->
+                  <img src="../img/p_avantw3c.png" class="w-full h-auto shadow-lg rounded-lg">
+                </div>
+                <div class="space-y-2">
+                  <p class="font-bold">Ma page après le W3C</p>
+                </div>
+            </div>
+        }
     </div>
 </div>

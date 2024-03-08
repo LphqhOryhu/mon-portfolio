@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './competences.component.scss'
 })
 export class CompetencesComponent {
-
+  public dernierePreuveClique: string = '';
+  public enregistrerPreuve(nomPreuve: string): void {
+    this.dernierePreuveClique = nomPreuve;
+  }
 }
