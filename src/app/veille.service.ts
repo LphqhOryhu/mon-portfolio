@@ -117,8 +117,79 @@ export class VeilleService {
       "date": "25 Septembre 2023",
       "bornage": "Évolution des Menaces et Contre-Mesures",
       "url": "https://www.isc2.org/insights"
-    }   
-
+    },
+    {
+      "titre": "PoC released for Microsoft WordPad CVE-2023-36563 flaw exploited in attacks",
+      "auteur": "do son",
+      "resume": "Une vulnérabilité dans Microsoft WordPad, identifiée comme CVE-2023-36563, a été exploitée pour voler des hachages NTLM. Un PoC a été publié par le chercheur en sécurité Dillon Franke, mettant en lumière l'importance d'appliquer rapidement les correctifs de sécurité.",
+      "date": "30 octobre 2023",
+      "bornage": "Évolution des Menaces et Contre-Mesures",
+      "url": "https://securityonline.info/poc-released-for-microsoft-wordpad-cve-2023-36563-flaw-exploited-in-attacks/"
+    },
+    {
+      "titre": "The Most Comprehensive Guide To Choose a Pentest Partner",
+      "auteur": "SecureLayer7 Lab",
+      "resume": "Cet article souligne l'importance de choisir le bon partenaire de pentest, avec des conseils sur des aspects clés tels que l'expertise, l'expérience, les certifications, une approche personnalisée, une méthodologie de test exhaustive, un rapport clair et le support après le test.",
+      "date": "9 octobre 2023",
+      "bornage": "Méthodologies et Techniques de Pentest",
+      "url": "https://blog.securelayer7.net/the-most-comprehensive-guide-to-choose-a-pentest-partner/"
+    },
+    {
+      "titre": "CVE-2023-29552: CISA Warns of Actively Exploited SLP Vulnerability",
+      "auteur": "do son",
+      "resume": "Une vulnérabilité critique dans le Service Location Protocol (SLP) a été découverte, rendant des dizaines de milliers d'appareils vulnérables à des attaques par réflexion de déni de service (DoS) avec un facteur d'amplification de 2,200 fois. Cette faille, exploitée activement et repérée par la CISA, souligne l'urgence pour les organisations de mettre en œuvre les correctifs fournis par les fournisseurs avant le 29 novembre 2023.",
+      "date": "8 novembre 2023",
+      "bornage": "Évolution des Menaces et Contre-Mesures",
+      "url": "https://securityonline.info/cisa-warns-of-actively-exploited-slp-cve-2023-29552-vulnerability/"
+    },
+    {
+      "titre": "CVE-2023-42465: SUDO Affected by Stack/Register Flaw, OpenSSH, OpenSSL, and MySQL are Vulnerable",
+      "auteur": "do son",
+      "resume": "Une nouvelle technique d'attaque, 'Mayhem', exploitant l'effet Rowhammer, cible les variables de pile et de registre des CPU, affectant SUDO, OpenSSH, OpenSSL et MySQL. Cette méthode représente une évolution significative dans la menace cybernétique, permettant potentiellement l'accès non autorisé ou le contrôle de systèmes sensibles.",
+      "date": "22 décembre 2023",
+      "bornage": "Méthodologies et Techniques de Pentest",
+      "url": "https://securityonline.info/cve-2023-42465-sudo-affected-by-stack-register-flaw-openssh-openssl-and-mysql-are-vulnerable/"
+    },
+    {
+      "titre": "SAP Patches Critical Vulnerabilities in December Update",
+      "auteur": "do son",
+      "resume": "Le 12 décembre 2023, SAP a publié 15 nouvelles notes de sécurité et mis à jour 2 notes précédemment publiées pour renforcer la protection de son écosystème contre les menaces cybernétiques. Les vulnérabilités adressées varient de critiques à modérées, avec plusieurs classées comme 'Hot News' pour leur importance et impact potentiel.",
+      "date": "12 décembre 2023",
+      "bornage": "Évolution des Menaces et Contre-Mesures",
+      "url": "https://securityonline.info/sap-patches-critical-vulnerabilities-in-december-update/"
+    },
+    {
+      "titre": "CVE-2024-20674 & 20700: Two Critical Flaws in Microsoft Patch Tuesday January 2024",
+      "auteur": "do son",
+      "resume": "Microsoft a lancé sa première mise à jour de Patch Tuesday de l'année 2024, corrigeant 49 failles de sécurité dans divers composants du système d'exploitation Windows et des logiciels, y compris plusieurs bugs de Chromium, portant le total à 53 CVEs corrigés. Deux vulnérabilités étaient classées comme 'Critiques' et 47 comme 'Importantes', avec une attention particulière sur une faille de sécurité Kerberos et une vulnérabilité Hyper-V permettant l'exécution de code à distance.",
+      "date": "9 janvier 2024",
+      "bornage": "Évolution des Menaces et Contre-Mesures",
+      "url": "https://securityonline.info/cve-2024-20674-20700-two-critical-flaws-in-microsoft-patch-tuesday-january-2024/"
+    },
+    {
+      "titre": "Linux Kernel Flaw CVE-2024-0193 Opens Root Access",
+      "auteur": "do son",
+      "resume": "Une nouvelle menace a été révélée affectant le noyau Linux, avec la découverte de la faille de sécurité CVE-2024-0193, une faille de gravité élevée dans le sous-système netfilter. Cette vulnérabilité permet à des attaquants locaux d'escalader leurs privilèges et d'exécuter du code arbitraire, potentiellement conduisant à un kernel panic. Red Hat et d'autres grandes organisations ont émis des avertissements concernant cette faille, soulignant la nécessité d'une mise à jour rapide pour prévenir les abus.",
+      "date": "8 janvier 2024",
+      "bornage": "Méthodologies et Techniques de Pentest",
+      "url": "https://securityonline.info/linux-kernel-flaw-cve-2024-0193-opens-root-access/"
+    },
+    {
+      "titre": "New variant of Mispadu Stealer is Exploiting CVE-2023-36025 Vulnerability",
+      "auteur": "do son",
+      "resume": "La nouvelle variante du Mispadu Stealer, un infostealer notoire ciblant depuis 2019 les utilisateurs hispanophones et lusophones, principalement en Amérique latine, exploite désormais la vulnérabilité CVE-2023-36025 pour contourner la protection Windows SmartScreen. Cette technique permet aux attaquants de distribuer un payload malveillant via un fichier .url, soulignant l'importance de rester vigilant et d'appliquer les mesures de protection recommandées.",
+      "date": "4 février 2024",
+      "bornage": "Méthodologies et Techniques de Pentest",
+      "url": "https://securityonline.info/new-variant-of-mispadu-stealer-is-exploiting-cve-2023-36025-vulnerability/"
+    },
+    {
+      "titre": "CVE-2024-21351 & CVE-2024-21412: Two 0-days flaws in Microsoft February 2024 Patch Tuesday",
+      "auteur": "do son",
+      "resume": "La mise à jour de Patch Tuesday de février 2024 de Microsoft s'est révélée critique, avec la correction de 79 vulnérabilités, dont cinq classées comme critiques. Deux de ces vulnérabilités, identifiées comme des 'zero-days', étaient déjà exploitées activement. Les correctifs incluaient également des vulnérabilités dans le navigateur Edge basé sur Chromium, renforçant la sécurité des utilisateurs dans la navigation web.",
+      "date": "13 février 2024",
+      "bornage": "Évolution des Menaces et Contre-Mesures",
+      "url": "https://securityonline.info/cve-2024-21351-cve-2024-21412-two-0-days-flaws-in-microsoft-february-2024-patch-tuesday/"
+    }
   ];
 
   constructor() { }
