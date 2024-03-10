@@ -1,275 +1,204 @@
-@if(dernierePreuveClique === ''){
-        <div class="w-screen px-4 py-8 mt-20 ">
-            <!-- Votre contenu existant ici -->
-            <!-- Section B 1.1 - Gérer le patrimoine informatique -->
-            <div class="bg-gray-100 p-4 rounded-md mb-4">
+@if(dernierePreuveClique === '')
+{
+    <div class="w-[98.9vw] px-4 py-8 mt-20">
+        <!-- Votre contenu existant ici -->
+        <!-- Section B 1.1 - Gérer le patrimoine informatique -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.1 - Gérer le patrimoine informatique</h2>
             <div class="flex justify-between">
                 <span>W3C - Mars 2023</span>
                 <a href="#" (click)="enregistrerPreuve('W3C')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
                 <span>RGPD - Octobre 2022</span>
                 <a href="#" (click)="enregistrerPreuve('RGPD')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
                 <span>Traduction - Juin 2023</span>
-                <a href="#"(click)="enregistrerPreuve('Traduction')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('Traduction')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            </div>
-            
-            <!-- Section B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution -->
-            <div class="bg-gray-100 p-4 rounded-md mb-4">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution</h2>
-                <div class="flex justify-between">
-                    <span>GLPI - À venir</span>
-                    <a href="#" (click)="enregistrerPreuve('GLPI')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between">
-                    <span>Gestion de projets et suivi des missions - Janvier à Février 2024</span>
-                    <a href="#" (click)="enregistrerPreuve('GestionProjet')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-            </div>
-            
-            <!-- Section B 1.3 - Développer la présence en ligne de l’organisation -->
-            <div class="bg-gray-100 p-4 rounded-md mb-4">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.3 - Développer la présence en ligne de l’organisation</h2>
-                <div class="flex justify-between">
-                    <span>Site Web - Mai 2023</span>
-                    <a href="#" (click)="enregistrerPreuve('SiteWEB')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="my-2 h-px bg-gray-400 border-0" />
-                <div class="flex justify-between">
-                    <span>Site Web en entreprise - Juin 2023</span>
-                    <a href="#" (click)="enregistrerPreuve('SiteWEBFlazio')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="my-2 h-px bg-gray-400 border-0" />
-                <div class="flex justify-between">
-                    <span>Mise en production du site de SGA INDUSTRIES - Janvier à Février 2024</span>
-                    <a href="#"(click)="enregistrerPreuve('MiseProd')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-            </div>
-    
-    
-            <!-- Section B 1.4 - Mettre à disposition des utilisateurs un service informatique -->
-            <div class="bg-gray-100 p-4 rounded-md mb-4">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.4 - Travailler en mode projet</h2>
-                <div class="flex justify-between items-center mb-2">
-                    <span>GSK - Novembre 2022</span>
-                    <a href="#"(click)="enregistrerPreuve('GSK')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center mb-2">
-                    <span>Stage de première année - Juin - Août 2023</span>
-                    <a href="#" (click)="enregistrerPreuve('Stage')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center">
-                    <span>Création d'un site de gestion financière - Juin - Août 2023</span>
-                    <a href="#" (click)="enregistrerPreuve('WEBFinance')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between">
-                    <span>Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
-                    <a href="#" (click)="enregistrerPreuve('projet')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-            </div>
-    
-            <!-- Section B 1.5 - Mettre à disposition des utilisateurs un service informatique -->
-            <div class="bg-gray-100 p-4 rounded-md mb-4">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.5 - Mettre à disposition des utilisateurs un service informatique</h2>
-                <div class="flex justify-between items-center">
-                    <span>Portfolio - Janvier 2023</span>
-                    <span class="text-indigo-600 hover:text-indigo-700 transition duration-300 cursor-pointer">Ce site fait office de preuve</span>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between">
-                    <span>Déploiement et tests du site web - Janvier à Février 2024</span>
-                    <a href="#"  (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-            </div>
-    
-            <!-- Section B 1.6 - Organiser son développement professionnel -->
-            <div class="bg-gray-100 p-4 rounded-md">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.6 - Organiser son développement professionnel</h2>
-                <div class="flex justify-between items-center mb-2">
-                    <span>LinkedIn - Octobre 2022</span>
-                    <a href="#"  (click)="enregistrerPreuve('linkedin')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center mb-2">
-                    <span>Veille Technologique - Juin-Juillet 2023</span>
-                    <a href="#"  (click)="enregistrerPreuve('veille')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center mb-2">
-                    <span>CV / Lettre de motivation - À jours</span>
-                    <a href="#" (click)="enregistrerPreuve('cv')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center mb-2">
-                    <span>CMS - Janvier 2023</span>
-                    <a href="#"  (click)="enregistrerPreuve('cms')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between items-center">
-                    <span>Application de tri - Juillet 2023</span>
-                    <a href="#" (click)="enregistrerPreuve('applidetri')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-                <hr class="h-px  bg-gray-400 border-0 " />
-                <div class="flex justify-between">
-                    <span>Feedback et leçons apprises post-mise en production - Janvier à Février 2024</span>
-                    <a href="#"  (click)="enregistrerPreuve('feedback')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-                </div>
-            </div>
-        
-    
         </div>
+        
+        <!-- Section B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d'assistance et d'évolution</h2>
+            <div class="flex justify-between">
+                <span>Gestion de projets et suivi des missions - Janvier à Février 2024</span>
+                <a href="#" (click)="enregistrerPreuve('GestionProjet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+        </div>
+        
+        <!-- Section B 1.3 - Développer la présence en ligne de l’organisation -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.3 - Développer la présence en ligne de l'organisation</h2>
 
-  
+            <div class="flex justify-between">
+                <span>Site Web en entreprise - Juin 2023</span>
+                <a href="#" (click)="enregistrerPreuve('SiteWEBFlazio')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+          
+        </div>
+        
+        <!-- Section B 1.4 - Travailler en mode projet -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.4 - Travailler en mode projet</h2>
+            <div class="flex justify-between items-center mb-2">
+                <span>GSK - Novembre 2022</span>
+                <a href="#" (click)="enregistrerPreuve('GSK')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+        
+            <div class="flex justify-between items-center">
+                <span>Création d'un site de gestion financière - Juin - Août 2023</span>
+                <a href="#" (click)="enregistrerPreuve('WEBFinance')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span>Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
+                <a href="#" (click)="enregistrerPreuve('projet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+        </div>
+        
+        <!-- Section B 1.5 - Mettre à disposition des utilisateurs un service informatique -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.5 - Mettre à disposition des utilisateurs un service informatique</h2>
+            <div class="flex justify-between items-center">
+                <span>Portfolio - Fevrier 2024</span>
+                <span class="text-indigo-600 hover:text-indigo-700 transition duration-300 cursor-pointer">Ce site fait office de preuve</span>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span>Déploiement et tests du site web - Janvier à Février 2024</span>
+                <a href="#" (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+        </div>
+        
+        <!-- Section B 1.6 - Organiser son développement professionnel -->
+        <div class="bg-gray-300 p-4 rounded-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.6 - Organiser son développement professionnel</h2>
+            <div class="flex justify-between items-center mb-2">
+                <span>LinkedIn - À jour</span>
+                <a href="#" (click)="enregistrerPreuve('linkedin')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between items-center mb-2">
+                <span>Veille Technologique - Juin 2023 - Mars 2024</span>
+                <a href="#" (click)="enregistrerPreuve('veille')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+           
+           
+            
+           
+        </div>
+    </div>
 }
 @else{ <div class="flex flex-wrap">
     <div class="w-full md:w-1/2 px-4 py-8 mt-20 ">
         <!-- Votre contenu existant ici -->
         <!-- Section B 1.1 - Gérer le patrimoine informatique -->
-        <div class="bg-gray-100 p-4 rounded-md mb-4">
-        <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.1 - Gérer le patrimoine informatique</h2>
-        <div class="flex justify-between">
-            <span>W3C - Mars 2023</span>
-            <a href="#" (click)="enregistrerPreuve('W3C')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-        </div>
-        <hr class="h-px  bg-gray-400 border-0 " />
-        <div class="flex justify-between">
-            <span>RGPD - Octobre 2022</span>
-            <a href="#" (click)="enregistrerPreuve('RGPD')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-        </div>
-        <hr class="h-px  bg-gray-400 border-0 " />
-        <div class="flex justify-between">
-            <span>Traduction - Juin 2023</span>
-            <a href="#"(click)="enregistrerPreuve('Traduction')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-        </div>
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.1 - Gérer le patrimoine informatique</h2>
+            <div class="flex justify-between">
+                <span>W3C - Mars 2023</span>
+                <a href="#" (click)="enregistrerPreuve('W3C')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span>RGPD - Octobre 2022</span>
+                <a href="#" (click)="enregistrerPreuve('RGPD')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span>Traduction - Juin 2023</span>
+                <a href="#" (click)="enregistrerPreuve('Traduction')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
         </div>
         
         <!-- Section B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution -->
-        <div class="bg-gray-100 p-4 rounded-md mb-4">
-            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution</h2>
-            <div class="flex justify-between">
-                <span>GLPI - À venir</span>
-                <a href="#" (click)="enregistrerPreuve('GLPI')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d'assistance et d'évolution</h2>
             <div class="flex justify-between">
                 <span>Gestion de projets et suivi des missions - Janvier à Février 2024</span>
-                <a href="#" (click)="enregistrerPreuve('GestionProjet')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('GestionProjet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
         
         <!-- Section B 1.3 - Développer la présence en ligne de l’organisation -->
-        <div class="bg-gray-100 p-4 rounded-md mb-4">
-            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.3 - Développer la présence en ligne de l’organisation</h2>
-            <div class="flex justify-between">
-                <span>Site Web - Mai 2023</span>
-                <a href="#" (click)="enregistrerPreuve('SiteWEB')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="my-2 h-px bg-gray-400 border-0" />
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.3 - Développer la présence en ligne de l'organisation</h2>
+
             <div class="flex justify-between">
                 <span>Site Web en entreprise - Juin 2023</span>
-                <a href="#" (click)="enregistrerPreuve('SiteWEBFlazio')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('SiteWEBFlazio')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="my-2 h-px bg-gray-400 border-0" />
-            <div class="flex justify-between">
-                <span>Mise en production du site de SGA INDUSTRIES - Janvier à Février 2024</span>
-                <a href="#"(click)="enregistrerPreuve('MiseProd')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
+           
         </div>
-
-
-        <!-- Section B 1.4 - Mettre à disposition des utilisateurs un service informatique -->
-        <div class="bg-gray-100 p-4 rounded-md mb-4">
+        
+        <!-- Section B 1.4 - Travailler en mode projet -->
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.4 - Travailler en mode projet</h2>
             <div class="flex justify-between items-center mb-2">
                 <span>GSK - Novembre 2022</span>
-                <a href="#"(click)="enregistrerPreuve('GSK')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('GSK')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
-            <div class="flex justify-between items-center mb-2">
-                <span>Stage de première année - Juin - Août 2023</span>
-                <a href="#" (click)="enregistrerPreuve('Stage')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
+          
             <div class="flex justify-between items-center">
                 <span>Création d'un site de gestion financière - Juin - Août 2023</span>
                 <a href="#" (click)="enregistrerPreuve('WEBFinance')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
                 <span>Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
-                <a href="#" (click)="enregistrerPreuve('projet')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('projet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
-
+        
         <!-- Section B 1.5 - Mettre à disposition des utilisateurs un service informatique -->
-        <div class="bg-gray-100 p-4 rounded-md mb-4">
+        <div class="bg-gray-300 p-4 rounded-md mb-4">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.5 - Mettre à disposition des utilisateurs un service informatique</h2>
             <div class="flex justify-between items-center">
-                <span>Portfolio - Janvier 2023</span>
+                <span>Portfolio - Fevrier 2024</span>
                 <span class="text-indigo-600 hover:text-indigo-700 transition duration-300 cursor-pointer">Ce site fait office de preuve</span>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
                 <span>Déploiement et tests du site web - Janvier à Février 2024</span>
-                <a href="#"  (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <a href="#" (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
-
+        
         <!-- Section B 1.6 - Organiser son développement professionnel -->
-        <div class="bg-gray-100 p-4 rounded-md">
+        <div class="bg-gray-300 p-4 rounded-md">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.6 - Organiser son développement professionnel</h2>
             <div class="flex justify-between items-center mb-2">
-                <span>LinkedIn - Octobre 2022</span>
-                <a href="#"  (click)="enregistrerPreuve('linkedin')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <span>LinkedIn - À jour</span>
+                <a href="#" (click)="enregistrerPreuve('linkedin')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
+            <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between items-center mb-2">
-                <span>Veille Technologique - Juin-Juillet 2023</span>
-                <a href="#"  (click)="enregistrerPreuve('veille')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+                <span>Veille Technologique - Juin 2023 - Mars 2024</span>
+                <a href="#" (click)="enregistrerPreuve('veille')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
-            <div class="flex justify-between items-center mb-2">
-                <span>CV / Lettre de motivation - À jours</span>
-                <a href="#" (click)="enregistrerPreuve('cv')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
-            <div class="flex justify-between items-center mb-2">
-                <span>CMS - Janvier 2023</span>
-                <a href="#"  (click)="enregistrerPreuve('cms')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
-            <div class="flex justify-between items-center">
-                <span>Application de tri - Juillet 2023</span>
-                <a href="#" (click)="enregistrerPreuve('applidetri')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
-            <hr class="h-px  bg-gray-400 border-0 " />
-            <div class="flex justify-between">
-                <span>Feedback et leçons apprises post-mise en production - Janvier à Février 2024</span>
-                <a href="#"  (click)="enregistrerPreuve('feedback')"class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
+           
+           
+            
+            
         </div>
-    
-
     </div>
     <!-- PREUVE -->
     <div class="w-full md:w-1/2 px-4 py-8 mt-20">
-        <div class="border-2 border-black rounded-md">
+        <div class="border-2 border-black rounded-md bg-gray-300b ">
 
 
         @if(dernierePreuveClique === 'W3C'){
             <div class="p-4">
                 <h1>Worlwide Web Consortium</h1>
                 <p class="text-sm text-gray-700">Durant ma première année de BTS SIO, j'ai découvert ce qu'était le W3C. J'ai pris par la suite l'habitude de vérifier mes pages grâce à un site web qui suivait ces règles.</p>
+                <hr class="h-px  bg-gray-600 border-0 my-4 " />
+                <div class="space-y-4">
                 <div class="space-y-2">
                     <p class="font-bold">Ma page avant le W3C</p>
                     <!-- Remplacer "path-to-your-image-before" par le chemin vers votre image avant l'application des règles du W3C -->
@@ -277,14 +206,124 @@
                 </div>
                 <div class="space-y-2">
                     <p class="font-bold">Ma page après le W3C</p>
+                    <img src="../../assets/p_apresw3c.png" class="w-full h-auto shadow-lg rounded-lg">
+                </div>
                 </div>
             </div>
         }
 
         @if(dernierePreuveClique ==='RGPD'){
-            Durant
+            <div class="p-4">
+                <h1>Formation RGPD</h1>
+                <p class="text-sm text-gray-700">Durant ma formation j'ai suivie une formation visant a me former à la cyber sécurité, plus précisément a la gestion des données</p>
+                <hr class="h-px  bg-gray-600 border-0 my-4 " />
+                <div class="space-y-2">
+                    <img src="../../assets/rgpd.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/rgpd2.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/rgpd3.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/rgpd4.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/rgpd5.png" class="w-full h-auto shadow-lg rounded-lg">
+                </div>
+            </div>
         
         }
+
+        @if(dernierePreuveClique ==='Traduction'){
+            <div class="p-4">
+                <h1>Mission de traduction</h1>
+                <p class="text-sm text-gray-700">Durant mon stage de premiere année a Flazio j'ai du vérifier que la globalité du site etait bien traduit en francais, Flazio n'etant pas une entreprise francaise une legere correction s'imposé j'ai du répertorier les erreurs dans un fichier avec plusieurs informations pour les faires parvenir a mon tuteur</p>
+                <hr class="h-px  bg-gray-600 border-0 my-4 " />
+                <img src="../../assets/traduction.png" class="w-full h-auto shadow-lg rounded-lg">
+                
+            </div>
+        
+        }
+        @if(dernierePreuveClique ==='GestionProjet'){
+            <div class="p-4">
+                <h1>Gestion de Projet</h1>
+                <p class="text-sm text-gray-700">Durant mon stage de deuxieme année au sein de sga Mobility j'ai pu découvir pleinement ce qu'etais la gestion de projet plus en profondeur en effet via des outils comme Trello et Figma la gestion ainsi que l'assignation de tache précise permet de faciliter le travail et donc ameliorer le rendement finale pour chaque membre d'équipe</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <div class="space-y-2">
+                    <img src="../../assets/trello1.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/trello2.png" class="w-full h-auto shadow-lg rounded-lg">
+                    <img src="../../assets/figma.png" class="w-full h-auto shadow-lg rounded-lg">
+                </div>
+            </div>
+        }
+        
+        @if(dernierePreuveClique === 'SiteWEBFlazio'){
+            <div class="p-4">
+                <h1>Création d'un site web via le CMS Flazio</h1>
+                <p class="text-sm text-gray-700">Durant mon stage de premiere année j'ai eu a utilisé un nouveau CMS pour découvrir plus en détails l'entreprise qui m'acceuillait et ma premiere mission fu de créer un site web</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <a href="https://louvretest.flazio.com/" target="_blank">Lien du site web </a>
+            </div>
+        }
+        
+        @if(dernierePreuveClique === 'deploiement'){
+            <div class="p-4">
+                <h1>Mise en production</h1>
+                <p class="text-sm text-gray-700">La mise en production du site web sur lequel je travaillais a entrainé de longue phase de test ainsi que la correction d'un grand nombre de bug, pour ce faire j'ai du tester les fonctionnalités responsives du site via l'application AppResponsiv</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <img src="../../assets/responsive.png" class="w-full h-auto shadow-lg rounded-lg">
+            </div>
+        }
+        
+        @if(dernierePreuveClique === 'GSK'){
+            <div class="p-4">
+                <h1>Projet GSK</h1>
+                <p class="text-sm text-gray-700">Durant ma premiere année j'ai du travaillé sur un projet nommé GSK qui avait pour but de devoirs planifier des taches et séparer le travail entre plusieurs étudiants</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <img src="../../assets/gsk.png" class="w-full h-auto shadow-lg rounded-lg">
+            </div>
+        }
+        
+        
+        @if(dernierePreuveClique === 'WEBFinance'){
+            <div class="p-4">
+                <h1>Création d'un site web de gestion financière</h1>
+                <p class="text-sm text-gray-700">Durant mon stage de première année de bts sio j'ai du créer un site web retracant les opérations d'une entreprise, permettant d'avoir une vue plus claire des dépenses et recettes d'une entreprise</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <img src="../../assets/gestion.png" class="w-full h-auto shadow-lg rounded-lg">
+            </div>
+        }
+        
+        @if(dernierePreuveClique === 'projet'){
+            <div class="p-4">
+                <h1>Collaboration au sein d'un projet informatique </h1>
+                <p class="text-sm text-gray-700">Durant mon stage au sein de SGA j'ai du travailler en équipe ce qui incombe de devoirs avoir des outils de gestion de version comme par exemple git durant mon stage j'ai utilisé principalement git et bitbucket</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <img src="../../assets/git.png" class="w-full h-auto shadow-lg rounded-lg">
+            </div>
+        }
+
+        
+        @if(dernierePreuveClique === 'linkedin'){
+            <div class="p-4">
+                <h1>LinkedIn</h1>
+                <p class="text-sm text-gray-700">Tout au long de ma formation et de mes expériences j'ai compris qu'avoir un profils professionnel serieux et rigoureux etait impératif c'est pourquoi je tiens a jours tres reguliérement mon profils LinkedIn pour me tenir à jour de certainnes opportunité et actuallité</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <a class="" href="https://fr.linkedin.com/in/hugo-de-brabander-b678a5260" target="_blank"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 448 512">
+                      <path fill="#00000" 
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                  </a>
+            </div>
+        }
+        
+        @if(dernierePreuveClique === 'veille'){
+            <div class="p-4">
+                <h1>Ma veille technologique</h1>
+                <p class="text-sm text-gray-700">Depuis Juin 2023 je tiens de manière mensuelle à jours ma veille technologique qui porte sur le pentest, c'est une facon de se tenir informé et de faire parvenir l'information a soit tres importante</p>
+                <hr class="h-px bg-gray-600 border-0 my-4" />
+                <img src="../../assets/veille.png" class="w-full h-auto shadow-lg rounded-lg">
+                
+            </div>
+        } 
+        
+      
+        
         
     </div>
 </div>
