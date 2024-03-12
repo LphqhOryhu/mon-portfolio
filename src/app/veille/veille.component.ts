@@ -11,12 +11,14 @@ import { VeilleService } from '../veille.service';
 })
 export class VeilleComponent {
   veilles: Veille[];
+  showModalOutils: boolean = false;
+
+
   constructor(private veilleService: VeilleService) { 
     this.veilles = this.veilleService.getVeilles();
   }
 
-
-  ngOnInit(): void {
-
+  toggleModal() {
+    this.showModalOutils = !this.showModalOutils;
   }
 }
