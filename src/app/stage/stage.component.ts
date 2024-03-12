@@ -10,9 +10,11 @@ export class StageComponent {
   showModalFlazio: boolean = false;
   showModalSGA: boolean = false;
   showMoreFlazio: boolean = false; 
-  showMoreSGA: boolean = false; 
+  showMoreSGA: boolean = false;
+  selectionMade: boolean = false;
 
   selectOption(option: string) {
+    this.selectionMade = true;
     if (option === 'Flazio') {
       this.openModalFlazio();
     } else if (option === 'SGA') {
@@ -32,6 +34,7 @@ export class StageComponent {
 
   closeModals() {
     this.resetModals();
+    this.selectionMade = false;
   }
 
   viewMoreFlazio() {

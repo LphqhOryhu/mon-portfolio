@@ -1,14 +1,26 @@
 <div class="mt-24 w-[98.9vw] px-4">
-    <div class="flex gap-x-2 items-center justify-center">
-        <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="selectOption('Flazio')">Flazio</button>
-        <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="selectOption('SGA')">SGA</button>
-    </div>  
+    @if(!selectionMade){
+        <div class="flex flex-col space-y-3">
+            <div class=" py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/flazio.png'); background-size: cover; background-position: center;">
+                <div class="flex gap-x-2 items-center justify-center pb-2">
+                    <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="selectOption('Flazio')">Découvrir</button>
+                </div>
+            </div>
+
+            <!-- Bandeau pour SGA -->
+            <div class="py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/sga.png    '); background-size: cover; background-position: center;" >
+                <div class="flex gap-x-2 items-center justify-center pb-2">
+                    <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="selectOption('SGA')">Découvrir</button>
+                </div>
+            </div>
+        </div>
+    }
 
     @if(showModalFlazio){
         <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
             <div class="font-bold">Flazio</div>
-            <div class="modal-body mt-4">
-                <p>Voulez-vous voir plus de contenu sur Flazio ?</p>
+            <div class="modal-body mt-4 text-justify text-sm">
+                <p>Durant mon stage de première année dans le cadre du programme Erasmus+ chez Flazio, une entreprise italienne innovante fondée en 2012 avec l'ambition de simplifier la création de sites web à l'instar de Wix ou WordPress, j'ai eu l'occasion de me plonger dans divers aspects du développement web et de la communication. Mon séjour de deux mois, de mai à juillet 2023 à Catane, Sicile, m'a permis d'embrasser des projets variés, de la traduction de contenus à la classification et la création de sites web, enrichissant profondément mon expérience professionnelle.</p>
             </div>
             <div class="modal-footer flex gap-x-2 mt-4">
                 <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
@@ -20,8 +32,9 @@
     @if(showModalSGA){
         <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
             <div class="font-bold">SGA</div>
-            <div class="modal-body mt-4">
-                <p>Voulez-vous voir plus de contenu sur SGA ?</p>
+            <div class="modal-body mt-4 text-justify text-sm">
+                <p>
+                    Mon stage chez SGA INDUSTRIES, du 15 janvier au 23 février 2024, a été une plongée profonde dans le monde de l'innovation et du développement technologique. Située en France et fondée le 4 octobre 1999, SGA INDUSTRIES s'est spécialisée dans la fabrication de bornes de recharge, se distinguant par son engagement envers l'innovation et la qualité. En tant que SASU, elle a su tisser un réseau solide avec plus de 200 partenaires et proposer un catalogue riche de plus de 250 produits. Mon rôle au sein du département de développement m'a amené à contribuer activement à un projet de site web, de sa conception jusqu'à son déploiement, en passant par la correction d'erreurs et l'ajout de nouvelles fonctionnalités. J'ai travaillé dans un environnement équipé de Debian, utilisant Visual Studio Code et Figma pour le développement avec JavaScript, HTML, CSS, et Angular, ce qui a favorisé la création d'applications web réactives. </p>
             </div>
             <div class="modal-footer flex gap-x-2 mt-4">
                 <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
