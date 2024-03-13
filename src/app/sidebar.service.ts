@@ -18,4 +18,18 @@ export class SidebarService {
   updateComponentToShow(component: string) {
     this.componentToShow.next(component);
   }
+
+  onToggleSidebar(): void {
+    this.toggleSidebar();
+    let state:string = 'open';
+    console.log(state);
+  }
+
+  onCloseSidebar(): void {
+    this.toggleSidebar();
+    let state:string='close';
+    console.log(state);
+  }
 }
+
+

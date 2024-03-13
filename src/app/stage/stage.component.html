@@ -1,6 +1,6 @@
 <div class="mt-24 w-[98.9vw] px-4">
     @if(!selectionMade){
-        <div class="flex flex-col space-y-3">
+        <div class="flex flex-col space-y-3 ml-10">
             <div class=" py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/flazio.png'); background-size: cover; background-position: center;">
                 <div class="flex gap-x-2 items-center justify-center pb-2">
                     <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="selectOption('Flazio')">Découvrir</button>
@@ -17,7 +17,7 @@
     }
 
     @if(showModalFlazio){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
             <div class="font-bold">Flazio</div>
             <div class="modal-body mt-4 text-justify text-sm">
                 <p>Durant mon stage de première année dans le cadre du programme Erasmus+ chez Flazio, une entreprise italienne innovante fondée en 2012 avec l'ambition de simplifier la création de sites web à l'instar de Wix ou WordPress, j'ai eu l'occasion de me plonger dans divers aspects du développement web et de la communication. Mon séjour de deux mois, de mai à juillet 2023 à Catane, Sicile, m'a permis d'embrasser des projets variés, de la traduction de contenus à la classification et la création de sites web, enrichissant profondément mon expérience professionnelle.</p>
@@ -30,7 +30,7 @@
     }
 
     @if(showModalSGA){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
             <div class="font-bold">SGA</div>
             <div class="modal-body mt-4 text-justify text-sm">
                 <p>
@@ -44,7 +44,7 @@
     }
 
     @if(showMoreFlazio){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
             <h2 class="font-bold text-lg mb-4">Plus sur Flazio</h2>
             <h3 class="font-bold">Rapport de Stage - Stage Erasmus+</h3>
             <p><strong>Hugo DE BRABANDER</strong></p>
@@ -102,7 +102,7 @@
         
     }
     @if(showMoreSGA){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg">
+        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
             <h2 class="text-xl font-bold mb-4">En savoir plus sur SGA</h2>
             <h3 class="font-semibold">1. L'entreprise</h3>
             

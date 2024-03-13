@@ -33,4 +33,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
     this.sidebarService.toggleSidebar(); 
     this.sidebarService.updateComponentToShow(component); // Met à jour le composant à afficher
   }
+
+  fermerBarreLaterale() {
+    this.sidebarService.onCloseSidebar();
+  }
 }

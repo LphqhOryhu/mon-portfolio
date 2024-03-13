@@ -20,4 +20,13 @@
       @apply flex-col;
     }
   }
+
+  .sidebar-toggle-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px; /* Largeur de la zone sensible */
+    height: 100vh; /* Fait que la div prenne toute la hauteur de la fenêtre */
+  
+  }
   

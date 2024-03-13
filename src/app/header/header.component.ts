@@ -9,10 +9,14 @@ import { SidebarService } from '../sidebar.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  
+  constructor(private sidebarService: SidebarService) {
 
-  constructor(private sidebarService: SidebarService) {}
-
-  onToggleSidebar(): void {
-    this.sidebarService.toggleSidebar();
   }
+
+  ouvrirBarreLaterale() {
+    this.sidebarService.onToggleSidebar();
+  }
+
+  
 }
