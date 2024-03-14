@@ -1,4 +1,4 @@
-<div class="mt-24 w-[98.9vw] px-4">
+<div class="mt-[70px] w-[98.9vw] px-4">
     @if(!selectionMade){
         <div class="flex flex-col space-y-3 ml-10">
             <div class=" py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/flazio.png'); background-size: cover; background-position: center;">
@@ -17,135 +17,16 @@
     }
 
     @if(showModalFlazio){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
-            <div class="font-bold">Flazio</div>
-            <div class="modal-body mt-4 text-justify text-sm">
-                <p>Durant mon stage de première année dans le cadre du programme Erasmus+ chez Flazio, une entreprise italienne innovante fondée en 2012 avec l'ambition de simplifier la création de sites web à l'instar de Wix ou WordPress, j'ai eu l'occasion de me plonger dans divers aspects du développement web et de la communication. Mon séjour de deux mois, de mai à juillet 2023 à Catane, Sicile, m'a permis d'embrasser des projets variés, de la traduction de contenus à la classification et la création de sites web, enrichissant profondément mon expérience professionnelle.</p>
-            </div>
-            <div class="modal-footer flex gap-x-2 mt-4">
-                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="viewMoreFlazio()">Voir Plus sur Flazio</button>
-            </div>
+        <app-flazio></app-flazio>
+        <div class="flex absolute p-4 right-20">
+            <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
         </div>
     }
 
     @if(showModalSGA){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
-            <div class="font-bold">SGA</div>
-            <div class="modal-body mt-4 text-justify text-sm">
-                <p>
-                    Mon stage chez SGA INDUSTRIES, du 15 janvier au 23 février 2024, a été une plongée profonde dans le monde de l'innovation et du développement technologique. Située en France et fondée le 4 octobre 1999, SGA INDUSTRIES s'est spécialisée dans la fabrication de bornes de recharge, se distinguant par son engagement envers l'innovation et la qualité. En tant que SASU, elle a su tisser un réseau solide avec plus de 200 partenaires et proposer un catalogue riche de plus de 250 produits. Mon rôle au sein du département de développement m'a amené à contribuer activement à un projet de site web, de sa conception jusqu'à son déploiement, en passant par la correction d'erreurs et l'ajout de nouvelles fonctionnalités. J'ai travaillé dans un environnement équipé de Debian, utilisant Visual Studio Code et Figma pour le développement avec JavaScript, HTML, CSS, et Angular, ce qui a favorisé la création d'applications web réactives. </p>
-            </div>
-            <div class="modal-footer flex gap-x-2 mt-4">
-                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-                <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="viewMoreSGA()">Voir Plus sur SGA</button>
-            </div>
+        <app-sga></app-sga>
+        <div class="flex absolute p-4 right-20">
+            <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
         </div>
     }
-
-    @if(showMoreFlazio){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
-            <h2 class="font-bold text-lg mb-4">Plus sur Flazio</h2>
-            <h3 class="font-bold">Rapport de Stage - Stage Erasmus+</h3>
-            <p><strong>Hugo DE BRABANDER</strong></p>
-            <p>1 SIO A</p>
-            <p>28. juil. 2023</p>
-            
-            <h4 class="font-semibold mt-4">Sommaire</h4>
-            <ul class="list-disc ml-6">
-                <li>A - L’entreprise</li>
-                <ul class="list-disc ml-6">
-                    <li>A.1 - Contexte</li>
-                    <li>A.2 - Environnement technologique de l'entreprise</li>
-                </ul>
-                <li>B - Organisation du projet</li>
-                <li>C - Les missions & projet</li>
-                <ul class="list-disc ml-6">
-                    <li>C.1 - La traduction de documents / site</li>
-                    <li>C.2 - La classification de sites web</li>
-                    <li>C.3 - La création d'un site web pour gérer des revendeurs</li>
-                </ul>
-                <li>D - Conclusion</li>
-            </ul>
-            
-            <div class="mt-4">
-                <p><strong>A - L’ENTREPRISE</strong></p>
-                <p><strong>A.1 - Contexte</strong></p>
-                <p>Dans le cadre du programme Erasmus+, j'ai effectué mon stage de 1re année à l'étranger, plus précisément à Catane en Italie, dans l’entreprise Flazio. Du au programme Erasmus+ plus mon stage a duré plus longtemps que la moyenne soit 2 mois du 23/05/2023 au 21/07/23. L'entreprise Flazio a été fondée en 2012 par Flavio Fazio :</p>
-                
-                <p>Son objectif est de créer un CMS équivalent à Wix ou WordPress. Pour cela, Flazio a réussi à créer une interface utilisateur fluide et facile à utiliser, permettant à des personnes sans connaissances en développement de créer très simplement des sites web, tels que des sites de vente en ligne ou même des sites de réservation. Cependant, si vous avez besoin d'un site plus personnalisé avec des fonctionnalités qui ne sont pas encore implémentées, ou si vous préférez ne pas vous embêter à le faire vous-même, l'entreprise dispose d'une équipe dédiée à la construction de ce genre de site.</p>
-                
-                <p>La clientèle de Flazio ne se limite pas à l'Italie, elle est internationale. Pour cette raison, Flazio s'est équipé d'un système de traduction automatique pour son site et ceux de ses clients. Durant ce stage, j’ai été assigné à plusieurs services, le service communication puis le service développement.</p>
-                <p><strong>A.2 - Environnement technologique de l'entreprise</strong></p>
-<p>L'entreprise est entièrement équipée de pc portables MacBook. Le service communication utilise des logiciels tels que la suite Adobe et la suite Google Workspace pour la création de documents. Le service développement se base principalement sur Visual Studio Code pour le développement. Le CMS de Flazio est développé en HTML, CSS et JavaScript pour le frontend du site, et en PHP pour le backend.</p>
-
-<p>Concernant l'architecture du site ainsi que les informations relatives à leurs serveurs, nous n'en avons pas connaissance. Tout ce que nous savons, c'est que l'entreprise utilise Google Cloud pour héberger leurs serveurs, ainsi que ceux de leurs clients.</p>
-
-<h4 class="font-semibold mt-4">B - Organisation du projet</h4>
-            </div>
-    
-           
-            <p>Pendant ces 2 mois de stage, nous avons eu l'occasion de nous investir dans plusieurs missions et projets d'envergure qui nous ont permis de nous familiariser avec l'entreprise :</p>
-
-<ul class="list-disc ml-6">
-    <li>La traduction de documents / site : L'une de nos missions consistait à traduire des documents et le site web de l’entreprise en français. Cette tâche nous a non seulement permis d'améliorer nos compétences linguistiques, mais aussi de comprendre l'importance de l'accessibilité pour toucher un public plus large.</li>
-    <li>La classification de sites web : Une autre mission captivante consistait à classer des sites web dans différentes catégories : la catégorie "SPAM" pour les sites vides ou de test, la catégorie "SCAM" pour les sites frauduleux, et enfin la catégorie "NORMAL" pour les sites légitimes dont l'utilisation était avérée. Ce travail nous a offert l'opportunité de développer notre sens de l'organisation et de l'automatisation, ainsi que notre capacité à analyser méthodiquement les informations.</li>
-    <li>La création d'un site web pour gérer des revendeurs : Un projet majeur auquel nous avons été assigné était la conception et la création d'un site web dédié à la gestion des revendeurs de l'entreprise. Cette tâche nous a confrontés à des défis techniques et créatifs.</li>
-</ul>
-
-<p><strong>D - Conclusion</strong></p>
-<p>Mon stage de premier année chez Flazio dans le cadre du programme Erasmus+ à Catane en Sicile a été une expérience enrichissante tant sur le plan professionnel que personnel. Au cours de ces deux mois, j'ai eu l'opportunité de me plonger dans l'univers d'une entreprise dynamique et innovante, et de contribuer à divers projets stimulants.</p>
-<div class="modal-footer flex gap-x-2 mt-4">
-    <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-</div>
-        </div>
-        
-    }
-    @if(showMoreSGA){
-        <div class="mt-6 p-4 border border-gray-200 rounded shadow-lg ml-10">
-            <h2 class="text-xl font-bold mb-4">En savoir plus sur SGA</h2>
-            <h3 class="font-semibold">1. L'entreprise</h3>
-            
-            <h4 class="font-semibold mt-2">1.1 Présentation</h4>
-            <p><strong>1.1.1 Contexte du stage:</strong> Mon stage au sein de SGA INDUSTRIES s'est déroulé du 15 janvier au 23 février 2024, au sein du département de développement de l'entreprise, axé sur l'innovation. Durant cette période, le service était fortement impliqué dans le déploiement imminent d'un projet de site web sur lequel j'ai œuvré. Mes missions étaient centrées sur l'intégration de fonctionnalités et la résolution d'erreurs pour garantir le succès de cette étape cruciale.</p>
-            
-            <p><strong>1.1.2 Présentation de l’entreprise:</strong> SGA INDUSTRIES, fondée le 4 octobre 1999, est spécialisée dans la fabrication de bornes de recharge. Avec une expérience de 23 ans dans le domaine, elle s'est imposée comme un acteur majeur grâce à son engagement constant envers l'innovation et la qualité. Structurée en tant que Société par Actions Simplifiée Unipersonnelle (SASU), elle compte entre 10 et 19 salariés et est organisée en plusieurs branches, comprenant les départements de développement, de conception, et opérationnel.</p>
-            
-            <p><strong>1.1.3 Forme juridique, Partenaires, Produits en catalogue, Clients:</strong> SGA INDUSTRIES est une SASU, offrant une gestion souple et permettant l'implication de partenaires. L'entreprise entretient des relations avec plus de 200 partenaires à travers la France, renforçant ainsi sa présence sur le marché. Avec un catalogue diversifié de plus de 250 produits liés aux bornes de recharge, SGA INDUSTRIES répond aux besoins variés de ses clients, incluant des partenaires, des entreprises et des municipalités.</p>
-            
-            <h4 class="font-semibold mt-4">1.2 Environnement technologique de l’entreprise</h4>
-            <p><strong>1.2.1 Matériel:</strong> SGA INDUSTRIES utilise des postes fixes équipés du système d'exploitation Debian, un choix orienté vers la stabilité et la sécurité dans un environnement de développement.</p>
-            <p><strong>1.2.2 Outils de développement / Langage / Framework:</strong> Les outils de développement privilégiés incluent Visual Studio Code, un éditeur de code source puissant, et Figma, utilisé pour la conception d'interfaces utilisateur et la collaboration dans le processus de création. Les langages de programmation centraux sont JavaScript, HTML et CSS. Ces langages sont utilisés pour le développement côté client, offrant des fonctionnalités dynamiques et structurant les pages web. Le framework Angular, intégré dans l'environnement, facilite la création d'applications web dynamiques et réactives.</p>
-            <p><strong>1.2.3 Architecture:</strong> L'architecture des applications développées chez SGA INDUSTRIES suit les principes du développement web moderne, avec une utilisation judicieuse de JavaScript côté client et l'intégration d'Angular pour des applications réactives et performantes.</p>
-            
-            <h3 class="font-semibold mt-4">2. Organisation du projet</h3>
-            <p>L'organisation du travail au sein du département de développement s'articule autour de réunions bihebdomadaires, offrant un espace de communication directe et de partage des avancements. De plus, les missions et tâches à accomplir sont échangées via des messageries en ligne, favorisant une communication fluide et instantanée entre les membres de l'équipe. Cette approche permet une collaboration efficace et une compréhension claire des attentes et des priorités.</p>
-            
-            <p>Les tableaux Trello offrent une vue d'ensemble pratique pour chaque membre de l'équipe, facilitant ainsi la coordination et la gestion des délais. En parallèle, Trello et Figma sont utilisés pour le suivi visuel des étapes de conception et de développement, contribuant à une coordination efficace entre les membres de l'équipe.</p>
-            
-            <h3 class="font-semibold mt-4">3. Description des projets</h3>
-            <p><strong>3.1 Période « pré-mise en production du site »:</strong> Pendant cette phase, je me suis concentré sur l'ajout de nouvelles fonctionnalités et la correction de la logique de certaines parties du code, notamment la mise à jour graphique et le passage responsive de la réservation, l'ajout de conditions d'accès spécifiques aux comptes Utilisateurs et Développeurs, et l'amélioration de l'interface utilisateur avec l'ajout d'un filtre et d'une liste des favoris.</p>
-            
-            <p><strong>3.2 Période « mise en production du site »:</strong> Une fois le site prêt pour le déploiement, j'ai effectué une série de tests pour m'assurer que toutes les fonctionnalités fonctionnaient correctement et que le site était prêt pour sa mise en ligne.</p>
-            
-            <p><strong>3.3 Période « post-mise en production du site »:</strong> Après le déploiement, nous avons analysé les retours utilisateurs pour planifier les prochaines améliorations et ajouté de nouvelles fonctionnalités basées sur les besoins identifiés.</p>
-            
-            <h3 class="font-semibold mt-4">4. Conclusion</h3>
-            <p>Mon expérience de stage chez SGA INDUSTRIES a été incroyablement enrichissante. J'ai appris énormément sur le développement web, le travail en équipe, et l'importance de l'innovation dans le secteur technologique.</p>
-            
-            <h3 class="font-semibold mt-4">5. Lexique</h3>
-            <ul class="list-disc ml-4">
-                <li><strong>SASU:</strong> Société par Actions Simplifiée Unipersonnelle, une forme juridique d'entreprise française.</li>
-                <li><strong>Debian:</strong> Un système d'exploitation libre pour votre ordinateur, connu pour sa stabilité et sa sécurité.</li>
-                <li><strong>Visual Studio Code:</strong> Éditeur de code source développé par Microsoft, largement utilisé pour le développement de logiciels.</li>
-                <!-- Ajoutez d'autres termes ici si nécessaire -->
-            </ul>
-            
-                    
-            <div class="modal-footer flex gap-x-2 mt-4">
-                <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-            </div>
-        </div>
-    }
-    
 </div>

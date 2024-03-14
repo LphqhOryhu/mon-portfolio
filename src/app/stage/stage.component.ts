@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { FlazioComponent } from '../flazio/flazio.component';
+import { SgaComponent } from '../sga/sga.component';
 
 @Component({
-  selector: 'app-stage',
-  standalone: true,
-  templateUrl: './stage.component.html',
-  styleUrls: ['./stage.component.scss']
+    selector: 'app-stage',
+    standalone: true,
+    templateUrl: './stage.component.html',
+    styleUrls: ['./stage.component.scss'],
+    imports: [FlazioComponent,
+      SgaComponent]
 })
 export class StageComponent {
   showModalFlazio: boolean = false;
@@ -37,15 +41,6 @@ export class StageComponent {
     this.selectionMade = false;
   }
 
-  viewMoreFlazio() {
-    this.resetModals();
-    this.showMoreFlazio = true;
-  }
-
-  viewMoreSGA() {
-    this.resetModals();
-    this.showMoreSGA = true;
-  }
 
   private resetModals() {
     this.showModalFlazio = false;
