@@ -15,7 +15,7 @@ export class SgaComponent implements OnInit {
 
   @HostListener('window:wheel', ['$event']) onScrollEvent($event: WheelEvent) {
     const delta = $event.deltaY;
-    let scrollAmount = 660  ; // La quantité de scroll en pixels
+    let scrollAmount = 625  ; // La quantité de scroll en pixels
     if (delta > 0) {
       // Scrolling vers le bas
       window.scrollBy(0, scrollAmount);
