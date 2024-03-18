@@ -1,32 +1,33 @@
 <div class="mt-[70px] w-[98.9vw] px-4">
     @if(!selectionMade){
-        <div class="flex flex-col space-y-3 ml-10">
-            <div class=" py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/flazio.png'); background-size: cover; background-position: center;">
+        <div class="flex mt-28 flex-col space-y-6 ml-10 h-[40vw]">
+            <div class="py-2 rounded-lg shadow flex-1 flex flex-col justify-end bg-cover bg-center" style="background-image: url('../../assets/flazio.png');">
                 <div class="flex gap-x-2 items-center justify-center pb-2">
                     <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150" (click)="selectOption('Flazio')">Découvrir</button>
                 </div>
             </div>
-
+        
             <!-- Bandeau pour SGA -->
-            <div class="py-2 rounded-lg shadow h-60 flex flex-col justify-end" style="background-image: url('../../assets/sga.png    '); background-size: cover; background-position: center;" >
+            <div class="py-2 rounded-lg shadow flex-1 flex flex-col justify-end bg-cover bg-center" style="background-image: url('../../assets/sga.png');">
                 <div class="flex gap-x-2 items-center justify-center pb-2">
                     <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-150" (click)="selectOption('SGA')">Découvrir</button>
                 </div>
             </div>
         </div>
+        
     }
 
     @if(showModalFlazio){
         <app-flazio></app-flazio>
-       <!-- <div class="flex absolute p-4 right-20">
+        <div class="z-50 fixed right-1 bottom-4">
             <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-        </div>-->
+        </div>
     }
 
     @if(showModalSGA){
         <app-sga></app-sga>
-        <!--<div class="flex absolute p-4 right-20">
+        <div class="z-50 fixed right-1 bottom-4">
             <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
-        </div>-->
+        </div>
     }
 </div>

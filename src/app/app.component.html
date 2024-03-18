@@ -1,7 +1,10 @@
 <app-header></app-header>
+
 <div class="flex">
     <app-sidebar></app-sidebar>
-    
+    <div class="fixed top-[70px] right-1">
+        <app-scrolltop></app-scrolltop>
+    </div>
     @if(componentToShow === 'stage'){
         <app-stage></app-stage>
     }

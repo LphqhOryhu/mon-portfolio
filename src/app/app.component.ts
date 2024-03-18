@@ -10,11 +10,12 @@ import { VeilleComponent } from './veille/veille.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { Subscription } from 'rxjs';
 import { SidebarService } from './sidebar.service';
+import { ScrollToTopComponent } from './scrolltop/scrolltop.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, BreadcrumbComponent, HeaderComponent, MainContentComponent, SidebarComponent, StageComponent, VeilleComponent, CompetencesComponent],
+  imports: [CommonModule, RouterOutlet, BreadcrumbComponent, HeaderComponent, MainContentComponent, SidebarComponent, StageComponent, VeilleComponent, CompetencesComponent, ScrollToTopComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

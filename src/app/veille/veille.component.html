@@ -1,20 +1,20 @@
-<div class="fixed right-4 top-0 border bg-gray-300 rounded-lg text-black h-fit mt-20 flex flex-row items-center justify-between p-4 w-fit">
+<div class="fixed right-14 -top-[10px] border bg-slate-700 rounded-lg text-white h-fit mt-20 flex flex-row items-center justify-between p-4 w-fit">
   <div class="flex flex-col space-y-4">
-      <div>
+       @if(!showModalOutils){<div>
         <h3>Sélection du bornage :</h3>
         <mat-button-toggle-group class="z-0"  name="bornage" aria-label="Bornage" (change)="onValueChange($event)">
           <mat-button-toggle class="w-fit" checked="true" value="Méthodologies et Techniques de Pentest"><p class="text-sm">Méthodologies...</p></mat-button-toggle>
           <mat-button-toggle class="w-fit" value="Évolution des Menaces et Contre-Mesures"><p class="text-sm">Évolution...</p></mat-button-toggle>
         </mat-button-toggle-group>
-      </div>
-    <button (click)="toggleModal()" class="text-sm mr-2 bg-blue-950 hover:bg-blue-800 border border-white text-white font-bold py-2 px-4 rounded shadow hover:shadow-lg transition duration-200 ease-in-out">
-      {{ showModalOutils ? 'Voir veilles' : 'Voir outils' }}
+      </div>}
+    <button (click)="toggleModal()" class="text-sm mr-2 bg-slate-700 hover:bg-slate-500 border border-white text-white  py-2 px-4 rounded shadow hover:shadow-lg transition duration-200 ease-in-out">
+      {{ showModalOutils ? 'Retour aux veilles' : 'Voir outils' }}
     </button>
   </div>
 
 </div>
 
-<div class="mt-56 space-y-5 max-w-full p-4  ml-10">
+<div class="mt-52 space-y-5 max-w-full p-4  ml-10">
     @if(showModalOutils){
       <div class="flex flex-col space-y-2 ">
         <div class="flex flex-col space-y-2">

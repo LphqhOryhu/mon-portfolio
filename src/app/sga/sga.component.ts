@@ -1,9 +1,10 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { StageComponent } from '../stage/stage.component';
 
 @Component({
   selector: 'app-sga',
   standalone: true,
-  imports: [],
+  imports: [ StageComponent],
   templateUrl: './sga.component.html',
   styleUrl: './sga.component.scss'
 })
@@ -11,7 +12,9 @@ export class SgaComponent implements OnInit {
 
   ngOnInit(): void {
     // Ajout d'un écouteur d'événements si nécessaire
+    
   }
+  
 
   @HostListener('window:wheel', ['$event']) onScrollEvent($event: WheelEvent) {
     const delta = $event.deltaY;
