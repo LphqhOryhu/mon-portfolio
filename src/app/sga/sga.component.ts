@@ -1,10 +1,11 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { StageComponent } from '../stage/stage.component';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-sga',
   standalone: true,
-  imports: [ StageComponent],
+  imports: [ StageComponent, CarouselComponent],
   templateUrl: './sga.component.html',
   styleUrl: './sga.component.scss'
 })
