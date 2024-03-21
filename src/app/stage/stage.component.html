@@ -19,14 +19,14 @@
 
     @if(showModalFlazio){
         <app-flazio></app-flazio>
-        <div class="z-50 fixed right-1 bottom-4">
+        <div class="z-50 fixed left-1 bottom-4">
             <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
         </div>
     }
 
     @if(showModalSGA){
         <app-sga></app-sga>
-        <div class="z-50 fixed right-1 bottom-4">
+        <div class="z-50 fixed left-20 bottom-4">
             <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-150" (click)="closeModals()">Fermer</button>
         </div>
     }

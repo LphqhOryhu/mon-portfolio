@@ -5,29 +5,27 @@ import { CarouselComponent } from '../carousel/carousel.component';
 @Component({
   selector: 'app-sga',
   standalone: true,
-  imports: [ StageComponent, CarouselComponent],
+  imports: [StageComponent, CarouselComponent],
   templateUrl: './sga.component.html',
-  styleUrl: './sga.component.scss'
+  styleUrls: ['./sga.component.scss']
 })
 export class SgaComponent implements OnInit {
-
-  ngOnInit(): void {
-    // Ajout d'un écouteur d'événements si nécessaire
-    
-  }
+  private scrollAmount = 625.6; // La quantité de scroll en pixels
   
-
-  @HostListener('window:wheel', ['$event']) onScrollEvent($event: WheelEvent) {
-    const delta = $event.deltaY;
-    let scrollAmount = 625  ; // La quantité de scroll en pixels
-    if (delta > 0) {
-      // Scrolling vers le bas
-      window.scrollBy(0, scrollAmount);
-    } else {
-      // Scrolling vers le haut
-      window.scrollBy(0, -scrollAmount);
-    }
-    $event.preventDefault();
+  ngOnInit(): void {
+    // Initialisation si nécessaire
   }
 
+  @HostListener('window:wheel', ['$event'])
+  onScrollEvent($event: WheelEvent): void {
+    $event.preventDefault(); // Empêche le scroll par défaut pour éviter les doubles mouvements
+    
+    const direction = $event.deltaY > 0 ? 1 : -1; // Détermine la direction du scroll
+    const targetScrollPosition = window.pageYOffset + (this.scrollAmount * direction);
+    
+    window.scrollTo({
+      top: targetScrollPosition,
+      behavior: 'smooth' // Fournit un effet de défilement fluide
+    });
+  }
 }
