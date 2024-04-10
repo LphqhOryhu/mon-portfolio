@@ -23,9 +23,9 @@
         <!-- Section B 1.2 - Répondre aux incidents et aux demandes d’assistance et d'évolution -->
         <div class="bg-gray-200 p-4 rounded-md mb-4">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d'assistance et d'évolution</h2>
-            <div class="flex justify-between">
-                <span class="font-semibold ">Gestion de projets et suivi des missions - Janvier à Février 2024</span>
-                <a href="#" (click)="enregistrerPreuve('GestionProjet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            <div class="flex justify-between items-center mb-2">
+                <span class=" font-semibold">Stage chez SGA - Janvier à Février 2024</span>
+                <a href="#" (click)="enregistrerPreuve('sgaprincipale')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
         
@@ -63,10 +63,15 @@
                 <span class="text-red-600">Projet TimeTrack - Mars à Juin 2024</span>
                 <a href="#" (click)="enregistrerPreuve('timetrack1')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px bg-gray-400 border-0" />
+
             <div class="flex justify-between">
                 <span class="text-red-600 ">Projet gestionStage - Mars à Juin 2024</span>
                 <a href="#" (click)="enregistrerPreuve('gestionStage')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span class="font-semibold ">Gestion de projets et suivi des missions - Janvier à Février 2024</span>
+                <a href="#" (click)="enregistrerPreuve('GestionProjet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
         
@@ -328,6 +333,23 @@
                             </div>
                         </div>
                         }
+
+                        @if(dernierePreuveClique ==='sgaprincipale'){
+                            <div class="p-4">
+                                <h1>Stage chez SGA </h1>
+                                <p class="text-sm text-gray-700">Lors de mon stage chez SGA Mobility, j'ai participé au développement et à la mise à jour du site web de l'entreprise. J'étais chargé de traiter les tickets attribués par la supervision pour apporter des modifications et des améliorations spécifiques au site, garantissant ainsi son bon fonctionnement et sa mise à jour continue.</p>
+                                <hr class="h-px bg-gray-600 border-0 my-4" />
+                                <a href="../../assets/sgap1.png" target="_blank">
+                                    <img src="../../assets/sgap1.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/sgap2.png" target="_blank">
+                                    <img src="../../assets/sgap2.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/sgap3.png" target="_blank">
+                                    <img src="../../assets/sgap3.png" class="w-[50%] h-auto shadow-lg rounded-lg justify-center">
+                                </a>
+                            </div>    
+                            }
 
                     </div>
                     </div>
