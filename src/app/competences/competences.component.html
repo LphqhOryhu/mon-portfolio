@@ -116,182 +116,229 @@
                     <p class="text-sm text-gray-700">Durant ma première année de BTS SIO, j'ai découvert ce qu'était le W3C. Par la suite, j'ai pris l'habitude de vérifier mes pages grâce à un site web qui suivait ces règles.</p>
                     <hr class="h-px bg-gray-600 border-0 my-4" />
                     <div class="space-y-4">
-                    <div class="space-y-2">
-                        <p class="font-bold">Ma page avant le W3C</p>
-                        <!-- Remplacer "path-to-your-image-before" par le chemin vers votre image avant l'application des règles du W3C -->
-                        <img src="../../assets/p_avantw3c.png" class="w-full h-auto shadow-lg rounded-lg">
-                    </div>
-                    <div class="space-y-2">
-                        <p class="font-bold">Ma page après le W3C</p>
-                        <img src="../../assets/p_apresw3c.png" class="w-full h-auto shadow-lg rounded-lg">
-                    </div>
+                        <div class="space-y-2">
+                            <p class="font-bold">Ma page avant le W3C</p>
+                            <a href="../../assets/p_avantw3c.png" target="_blank">
+                                <img src="../../assets/p_avantw3c.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="font-bold">Ma page après le W3C</p>
+                            <a href="../../assets/p_apresw3c.png" target="_blank">
+                                <img src="../../assets/p_apresw3c.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            }
-
-            @if(dernierePreuveClique ==='RGPD'){
+                }
+                
+                @if(dernierePreuveClique ==='RGPD'){
                 <div class="p-4">
                     <h1>Formation RGPD</h1>
                     <p class="text-sm text-gray-700">Durant ma formation, j'ai suivi une formation visant à me former à la cybersécurité, plus précisément à la gestion des données.</p>
                     <hr class="h-px bg-gray-600 border-0 my-4" />
                     <div class="space-y-2">
-                        <img src="../../assets/rgpd.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/rgpd2.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/rgpd3.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/rgpd4.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/rgpd5.png" class="w-full h-auto shadow-lg rounded-lg">
+                        <a href="../../assets/rgpd.png" target="_blank">
+                            <img src="../../assets/rgpd.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                        <a href="../../assets/rgpd2.png" target="_blank">
+                            <img src="../../assets/rgpd2.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                        <a href="../../assets/rgpd3.png" target="_blank">
+                            <img src="../../assets/rgpd3.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                        <a href="../../assets/rgpd4.png" target="_blank">
+                            <img src="../../assets/rgpd4.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                        <a href="../../assets/rgpd5.png" target="_blank">
+                            <img src="../../assets/rgpd5.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+
                     </div>
                 </div>
-            }
-
-            @if(dernierePreuveClique ==='Traduction'){
+                }
+                
+                @if(dernierePreuveClique ==='Traduction'){
                 <div class="p-4">
                     <h1>Mission de traduction</h1>
                     <p class="text-sm text-gray-700">Durant mon stage de première année à Flazio, j'ai dû vérifier que la totalité du site était bien traduite en français. Flazio n'étant pas une entreprise française, une légère correction s'imposait. J'ai dû répertorier les erreurs dans un fichier avec plusieurs informations pour les faire parvenir à mon tuteur.</p>
                     <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <img src="../../assets/traduction.png" class="w-full h-auto shadow-lg rounded-lg">        
+                    <a href="../../assets/traduction.png" target="_blank">
+                        <img src="../../assets/traduction.png" class="w-full h-auto shadow-lg rounded-lg">
+                    </a>
                 </div>    
-            }
-            @if(dernierePreuveClique ==='GestionProjet'){
-                <div class="p-4">
-                    <h1>Gestion de Projet</h1>
-                    <p class="text-sm text-gray-700">Durant mon stage de deuxième année au sein de SGA Mobility, j'ai pu découvrir pleinement ce qu'était la gestion de projet plus en profondeur. En effet, via des outils comme Trello et Figma, la gestion ainsi que l'assignation de tâches précises permettent de faciliter le travail et donc d'améliorer le rendement final pour chaque membre d'équipe.</p>
-                    <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <div class="space-y-2">
-                        <img src="../../assets/trello1.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/trello2.png" class="w-full h-auto shadow-lg rounded-lg">
-                        <img src="../../assets/figma.png" class="w-full h-auto shadow-lg rounded-lg">
-                    </div>
-                </div>
-            }
-        
-            @if(dernierePreuveClique === 'SiteWEBFlazio'){
-                <div class="p-4">
-                    <h1>Création d'un site web via le CMS Flazio</h1>
-                    <p class="text-sm text-gray-700">Durant mon stage de première année, j'ai eu à utiliser un nouveau CMS pour découvrir plus en détails l'entreprise qui m'accueillait, et ma première mission fut de créer un site web.</p>
-                    <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <a href="https://louvretest.flazio.com/" target="_blank">Lien du site web</a>
-                </div>
-            }
-        
-            @if(dernierePreuveClique === 'deploiement'){
-                <div class="p-4">
-                    <h1>Mise en production</h1>
-                    <p class="text-sm text-gray-700">La mise en production du site web sur lequel je travaillais a entraîné de longues phases de test ainsi que la correction d'un grand nombre de bugs. Pour ce faire, j'ai dû tester les fonctionnalités responsives du site via l'application AppResponsive.</p>
-                    <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <img src="../../assets/responsive.png" class="w-full h-auto shadow-lg rounded-lg">
-                </div>
-            }
-        
-            @if(dernierePreuveClique === 'GSK'){
-                <div class="p-4">
-                    <h1>Projet GSK</h1>
-                    <p class="text-sm text-gray-700">Durant ma première année, j'ai dû travailler sur un projet nommé GSK qui avait pour but de planifier des tâches et de répartir le travail entre plusieurs étudiants.</p>
-                    <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <img src="../../assets/gsk.png" class="w-full h-auto shadow-lg rounded-lg">
-                </div>
-            }
-        
-        
-            @if(dernierePreuveClique === 'WEBFinance'){
-                <div class="p-4">
-                    <h1>Création d'un site web de gestion financière</h1>
-                    <p class="text-sm text-gray-700">Durant mon stage de première année de BTS SIO, j'ai dû créer un site web retraçant les opérations d'une entreprise, permettant d'avoir une vue plus claire sur les dépenses et les recettes de l'entreprise.</p>
-                    <hr class="h-px bg-gray-600 border-0 my-4" />
-                    <img src="../../assets/gestion.png" class="w-full h-auto shadow-lg rounded-lg">
-                </div>
-            }
-        
-                @if(dernierePreuveClique === 'projet'){
-                    <div class="p-4">
-                        <h1>Collaboration au sein d'un projet informatique</h1>
-                        <p class="text-sm text-gray-700">Durant mon stage au sein de SGA, j'ai dû travailler en équipe, ce qui incombe de devoir avoir des outils de gestion de version, comme par exemple Git. Durant mon stage, j'ai utilisé principalement Git et Bitbucket.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <img src="../../assets/git.png" class="w-full h-auto shadow-lg rounded-lg">
-                    </div>
                 }
+                @if(dernierePreuveClique ==='GestionProjet'){
+                    <div class="p-4">
+                        <h1>Gestion de Projet</h1>
+                        <p class="text-sm text-gray-700">Durant mon stage de deuxième année au sein de SGA Mobility, j'ai pu découvrir pleinement ce qu'était la gestion de projet plus en profondeur. En effet, via des outils comme Trello et Figma, la gestion ainsi que l'assignation de tâches précises permettent de faciliter le travail et donc d'améliorer le rendement final pour chaque membre d'équipe.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <div class="space-y-2">
+                            <a href="../../assets/trello1.png" target="_blank">
+                                <img src="../../assets/trello1.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                            <a href="../../assets/trello2.png" target="_blank">
+                                <img src="../../assets/trello2.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                            <a href="../../assets/figma.png" target="_blank">
+                                <img src="../../assets/figma.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                        </div>
+                    </div>
+                    }
+                    
+                    @if(dernierePreuveClique === 'SiteWEBFlazio'){
+                    <div class="p-4">
+                        <h1>Création d'un site web via le CMS Flazio</h1>
+                        <p class="text-sm text-gray-700">Durant mon stage de première année, j'ai eu à utiliser un nouveau CMS pour découvrir plus en détails l'entreprise qui m'accueillait, et ma première mission fut de créer un site web.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <a href="https://louvretest.flazio.com/" target="_blank">Lien du site web</a>
+                    </div>
+                    }
+                    
+                    @if(dernierePreuveClique === 'deploiement'){
+                    <div class="p-4">
+                        <h1>Mise en production</h1>
+                        <p class="text-sm text-gray-700">La mise en production du site web sur lequel je travaillais a entraîné de longues phases de test ainsi que la correction d'un grand nombre de bugs. Pour ce faire, j'ai dû tester les fonctionnalités responsives du site via l'application AppResponsive.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <a href="../../assets/responsive.png" target="_blank">
+                            <img src="../../assets/responsive.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                    </div>
+                    }
+                    
+                    @if(dernierePreuveClique === 'GSK'){
+                    <div class="p-4">
+                        <h1>Projet GSK</h1>
+                        <p class="text-sm text-gray-700">Durant ma première année, j'ai dû travailler sur un projet nommé GSK qui avait pour but de planifier des tâches et de répartir le travail entre plusieurs étudiants.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <a href="../../assets/gsk.png" target="_blank">
+                            <img src="../../assets/gsk.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                    </div>
+                    }
+                    
+                    @if(dernierePreuveClique === 'WEBFinance'){
+                    <div class="p-4">
+                        <h1>Création d'un site web de gestion financière</h1>
+                        <p class="text-sm text-gray-700">Durant mon stage de première année de BTS SIO, j'ai dû créer un site web retraçant les opérations d'une entreprise, permettant d'avoir une vue plus claire sur les dépenses et les recettes de l'entreprise.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <a href="../../assets/gestion.png" target="_blank">
+                            <img src="../../assets/gestion.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </a>
+                    </div>
+                    }
+                    
 
-        
-                @if(dernierePreuveClique === 'linkedin'){
-                    <div class="p-4">
-                        <h1>LinkedIn</h1>
-                        <p class="text-sm text-gray-700">Tout au long de ma formation et de mes expériences, j'ai compris qu'avoir un profil professionnel sérieux et rigoureux était impératif. C'est pourquoi je tiens à jour très régulièrement mon profil LinkedIn pour me tenir au courant de certaines opportunités et actualités.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <a class="" href="https://fr.linkedin.com/in/hugo-de-brabander-b678a5260" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 448 512">
-                              <path fill="#00000"
-                              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                            </svg>
-                          </a>
-                    </div>
-                }
-        
-                @if(dernierePreuveClique === 'veille'){
-                    <div class="p-4 w-full ">
-                        <h1>Ma veille technologique</h1>
-                        <p class="text-sm text-gray-700">Depuis juin 2023, je tiens de manière mensuelle à jour ma veille technologique qui porte sur le pentest. C'est une façon de se tenir informé et de faire parvenir l'information à soi, très importante.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <img src="../../assets/veille.png" class="w-full h-auto shadow-lg rounded-lg">        
-                    </div>
-                }
-                @if(dernierePreuveClique ===''){
+                    @if(dernierePreuveClique === 'projet'){
+                        <div class="p-4">
+                            <h1>Collaboration au sein d'un projet informatique</h1>
+                            <p class="text-sm text-gray-700">Durant mon stage au sein de SGA, j'ai dû travailler en équipe, ce qui incombe de devoir avoir des outils de gestion de version, comme par exemple Git. Durant mon stage, j'ai utilisé principalement Git et Bitbucket.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <a href="../../assets/git.png" target="_blank">
+                                <img src="../../assets/git.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>
+                        </div>
+                        }
+                        
+                        @if(dernierePreuveClique === 'linkedin'){
+                        <div class="p-4">
+                            <h1>LinkedIn</h1>
+                            <p class="text-sm text-gray-700">Tout au long de ma formation et de mes expériences, j'ai compris qu'avoir un profil professionnel sérieux et rigoureux était impératif. C'est pourquoi je tiens à jour très régulièrement mon profil LinkedIn pour me tenir au courant de certaines opportunités et actualités.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <a href="https://fr.linkedin.com/in/hugo-de-brabander-b678a5260" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 448 512">
+                                    <path fill="#00000"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        }
+                        
+                        @if(dernierePreuveClique === 'veille'){
+                        <div class="p-4 w-full ">
+                            <h1>Ma veille technologique</h1>
+                            <p class="text-sm text-gray-700">Depuis juin 2023, je tiens de manière mensuelle à jour ma veille technologique qui porte sur le pentest. C'est une façon de se tenir informé et de faire parvenir l'information à soi, très importante.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <a href="../../assets/veille.png" target="_blank">
+                                <img src="../../assets/veille.png" class="w-full h-auto shadow-lg rounded-lg">
+                            </a>        
+                        </div>
+                        }
+                        
+                    @if(dernierePreuveClique ===''){
                     <div class="p-4">
                         <h1 class="text-lg">Mes preuves</h1>  
                         <p>Ici, vous retrouverez toutes les preuves nécessaires liées à mes compétences, constituées : d'explications, de détails, d'images et de fichiers PDF.</p>  
                     </div>
-                }   
-                
-                @if(dernierePreuveClique ==='timetrack1'){
-                    <div class="p-4">
-                        <h1>Projet timetrack</h1>
-                        <p class="text-sm text-gray-700">Durant mon projet TimeTrack, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <div class="space-y-2">
-                            <img src="../../assets/timetrackgithub.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/timetracktrello.png" class="w-full h-auto shadow-lg rounded-lg">
+                    }   
+
+                    @if(dernierePreuveClique ==='timetrack1'){
+                        <div class="p-4">
+                            <h1>Projet TimeTrack</h1>
+                            <p class="text-sm text-gray-700">Durant mon projet TimeTrack, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <div class="space-y-2">
+                                <a href="../../assets/timetrackgithub.png" target="_blank">
+                                    <img src="../../assets/timetrackgithub.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/timetracktrello.png" target="_blank">
+                                    <img src="../../assets/timetracktrello.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                }
-                @if(dernierePreuveClique ==='gestionStage'){
-                    <div class="p-4">
-                        <h1>Projet GestionStage</h1>
-                        <p class="text-sm text-gray-700">Durant mon projet GestionStage, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <div class="space-y-2">
-                            <img src="../../assets/gestionstagetrello.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/gestionstagegithub.png" class="w-full h-auto shadow-lg rounded-lg">
+                        }
+                        
+                    @if(dernierePreuveClique === 'gestionStage'){
+                        <div class="p-4">
+                            <h1>Projet GestionStage</h1>
+                            <p class="text-sm text-gray-700">Durant mon projet GestionStage, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <div class="space-y-2">
+                                <a href="../../assets/gestionstagetrello.png" target="_blank">
+                                    <img src="../../assets/gestionstagetrello.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/gestionstagegithub.png" target="_blank">
+                                    <img src="../../assets/gestionstagegithub.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                }
-                @if(dernierePreuveClique ==='timeTrack2'){
-                    <div class="p-4">
-                        <h1>Projet TimeTrack</h1>
-                        <p class="text-sm text-gray-700">Durant le projet TimeTrack, mon équipe et moi avons mis à disposition un service pour de potentiels utilisateurs. Nous l'avons donc sécurisé pour éviter d'éventuelles usurpations ou vols d'informations.</p>
-                        <hr class="h-px bg-gray-600 border-0 my-4" />
-                        <div class="space-y-2">
-                            <img src="../../assets/timetracklogin.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/timetracktestlogin.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/timetrackhash.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/timetrackpointage.png" class="w-full h-auto shadow-lg rounded-lg">
-                            <img src="../../assets/timetrackadmin.png   " class="w-full h-auto shadow-lg rounded-lg">
+                        }
+                    @if(dernierePreuveClique ==='timeTrack2'){
+                        <div class="p-4">
+                            <h1>Projet TimeTrack</h1>
+                            <p class="text-sm text-gray-700">Durant le projet TimeTrack, mon équipe et moi avons mis à disposition un service pour de potentiels utilisateurs. Nous l'avons donc sécurisé pour éviter d'éventuelles usurpations ou vols d'informations.</p>
+                            <hr class="h-px bg-gray-600 border-0 my-4" />
+                            <div class="space-y-2">
+                                <a href="../../assets/timetracklogin.png" target="_blank">
+                                    <img src="../../assets/timetracklogin.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/timetracktestlogin.png" target="_blank">
+                                    <img src="../../assets/timetracktestlogin.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/timetrackhash.png" target="_blank">
+                                    <img src="../../assets/timetrackhash.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/timetrackpointage.png" target="_blank">
+                                    <img src="../../assets/timetrackpointage.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                                <a href="../../assets/timetrackadmin.png" target="_blank">
+                                    <img src="../../assets/timetrackadmin.png" class="w-full h-auto shadow-lg rounded-lg">
+                                </a>
+                            </div>
                         </div>
+                        }
+
                     </div>
-                }
-        
-    </div>
-</div>
+                    </div>
 
-</div>
+                    </div>
 
-<div class="flex flex-row space-x-2 p-4 justify-center">
-    <a href="../../assets/HBR_E4_Tableau_de_synthese.pdf" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
-        Voir le tableau des compétences
-    </a>
-    <a href="../../assets/HBR_E4_Tableau_de_synthese.pdf" download="HBR_E4_Tableau_de_synthese.pdf" class="inline-block bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">
-        Télécharger le tableau des compétences
-    </a>
-</div>
-
-    
-   
-
+                    <div class="flex flex-row space-x-2 p-4 justify-center">
+                    <a href="../../assets/HBR_E4_Tableau_de_synthese.pdf" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
+                        Voir le tableau des compétences
+                    </a>
+                    <a href="../../assets/HBR_E4_Tableau_de_synthese.pdf" download="HBR_E4_Tableau_de_synthese.pdf" class="inline-block bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">
+                        Télécharger le tableau des compétences
+                    </a>
+                    </div>
