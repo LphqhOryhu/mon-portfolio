@@ -1,4 +1,4 @@
-<div class="pt-28 min-h-screen flex flex-col">
+<div class="pt-28 min-h-screen flex flex-col ">
   <main class="flex-1">
     <div class="flex justify-center items-center">
       <div class="text-center px-16">
@@ -13,7 +13,7 @@
       </p>
     </section>
 
-    <div class="ml-20 flex justify-center items-center mb-10 max-w-[90vw]">
+    <div class="ml-20 flex justify-center items-center mb-10 max-w-[90vw] mt-6">
       @for(experience of experiences; track experiences ){
         <div class="flex items-center mr-4" (click)="selectExperience(experience.id)" (click)="openModal(experience.id)">
           <div class="w-fit rounded-full h-8 p-1 flex items-center justify-center text-sm font-bold"
@@ -35,111 +35,111 @@
         }
       }
     </div>
-
-    <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center">
-      <h2 class="text-3xl font-semibold mb-4">Diplômes</h2>
-      <div>
-        <p>Certifications ANSSI, RGPD, PIX</p>
-        <p>CLES Anglais niveau B1</p>
-        <p>Baccalauréat STI2D, spécialité Euro</p>
-      </div>
-    </section>
-
-    <section id="skills" class="py-10 px-4 md:px-8 lg:px-16 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Compétences</h2>
-      <div class="grid grid-cols-2 gap-4">
-          <div>
-              <h3 class="text-lg font-semibold mb-2">Développement Web</h3>
-              <ul class="list-none">
-                  <li class="mb-2">
-                      <span>HTML</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>CSS</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>Tailwind CSS</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>JS</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>TS</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>Angular</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>PHP Symfony</span>
-                  </li>
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold mb-2">Base de données</h3>
-              <ul class="list-none">
-                  <li class="mb-2">
-                      <span>SQL</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>MySQL</span>
-                  </li>
-                  <li class="mb-2 ">
-                      <span>SQL Server</span>
-                  </li>
-                  <li class="mb-2">
-                    <span>Transac SQL</span>
-                </li>
-
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold mb-2">Développement Logiciel</h3>
-              <ul class="list-none">
-                  <li class="mb-2">
-                      <span>C#</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>.NET</span>
-                  </li>
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold mb-2">Linguistique</h3>
-              <ul class="list-none">
-                  <li class="mb-2">
-                      <span>Expression en langue Anglaise B2</span>
-                  </li>
-                  <li class="mb-2">
-                      <span>Compréhension en langue Anglaise B2</span>
-                  </li>
-                  <li class="mb-2">
-                    <span>Base en Allemands</span>
-                </li>
-              </ul>
-          </div>
-      </div>
-  </section>
-  
-
-    <section id="soft-skills-interests" class="py-10 px-4 md:flex md:justify-between md:items-start md:px-8 lg:px-16 text-center">
-      <div class="mb-8 md:mb-0">
-        <h2 class="text-3xl font-semibold mb-4">Soft skills</h2>
+    <div class="space-y-5">
+      <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-slate-400 rounded-md mx-40">
+        <h2 class="text-3xl font-semibold mb-4 ">Diplômes</h2>
         <div>
-          <p>Créativité</p>
-          <p>Passion pour la technologie</p>
-          <p>Désir d'apprendre</p>
+          <p>Certifications ANSSI, RGPD, PIX</p>
+          <p>CLES Anglais niveau B1</p>
+          <p>Baccalauréat STI2D, option Euro</p>
         </div>
-      </div>
-      <div>
-        <h2 class="text-3xl font-semibold mb-4">Centres d'intérêts</h2>
-        <div class="text-left">
-          <p>Art</p>
-          <p>Sport</p>
-          <p>Culture Japonaise</p>
-          <p>Amateur d'e-sport</p>
+      </section>
+
+      <section id="skills" class="py-10 px-4 md:px-8 lg:px-16  mx-40  border bg-slate-400 rounded-md">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Compétences</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="text-left center border rounded-md bg-slate-300 mr-20 p-8">
+            <h3 class="text-lg font-semibold mb-2">Développement Web</h3>
+            <ul class="list-none">
+              <li class="mb-2">
+                <span>HTML</span>
+              </li>
+              <li class="mb-2">
+                <span>CSS</span>
+              </li>
+              <li class="mb-2">
+                <span>Tailwind CSS</span>
+              </li>
+              <li class="mb-2">
+                <span>JS</span>
+              </li>
+              <li class="mb-2">
+                <span>TS</span>
+              </li>
+              <li class="mb-2">
+                <span>Angular</span>
+              </li>
+              <li class="mb-2">
+                <span>PHP Symfony</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-right border rounded-md bg-slate-300 ml-20 p-8">
+            <h3 class="text-lg font-semibold mb-2 ">Base de données</h3>
+            <ul class="list-none">
+              <li class="mb-2">
+                <span>SQL</span>
+              </li>
+              <li class="mb-2">
+                <span>MySQL</span>
+              </li>
+              <li class="mb-2 ">
+                <span>SQL Server</span>
+              </li>
+              <li class="mb-2">
+                <span>Transact SQL</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-left border rounded-md bg-slate-300 mr-20 p-8">
+            <h3 class="text-lg font-semibold mb-2">Développement Logiciel</h3>
+            <ul class="list-none">
+              <li class="mb-2">
+                <span>C#</span>
+              </li>
+              <li class="mb-2">
+                <span>.NET</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-right border rounded-md bg-slate-300 ml-20 p-8">
+            <h3 class="text-lg font-semibold mb-2">Linguistique</h3>
+            <ul class="list-none">
+              <li class="mb-2">
+                <span>Expression en langue Anglaise B2</span>
+              </li>
+              <li class="mb-2">
+                <span>Compréhension en langue Anglaise B2</span>
+              </li>
+              <li class="mb-2">
+                <span>Base en Allemands</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+
+      <section id="soft-skills-interests" class="py-10 px-4 md:flex md:justify-between md:items-start md:px-8 lg:px-16 text-center">
+        <div class="mb-8 md:mb-0 rounded-md bg slate-400">
+          <h2 class="text-3xl font-semibold mb-4">Soft skills</h2>
+          <div>
+            <p>Créativité</p>
+            <p>Passion pour la technologie</p>
+            <p>Désir d'apprendre</p>
+          </div>
+        </div>
+        <div class="rounded-md bg slate-400">
+          <h2 class="text-3xl font-semibold mb-4 ">Centres d'intérêts</h2>
+          <div class="text-left">
+            <p>Art</p>
+            <p>Sport</p>
+            <p>Culture Japonaise</p>
+            <p>Amateur d'e-sport</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="bg-blue-950 text-white text-center w-[98.9vw] py-8">

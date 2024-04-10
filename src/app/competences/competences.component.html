@@ -58,6 +58,16 @@
                 <span class="font-semibold ">Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('projet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span class="text-red-600">Projet TimeTrack - Mars à Juin 2024</span>
+                <a href="#" (click)="enregistrerPreuve('timetrack1')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span class="text-red-600 ">Projet gestionStage - Mars à Juin 2024</span>
+                <a href="#" (click)="enregistrerPreuve('gestionStage')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
         </div>
         
         <!-- Section B 1.5 - Mettre à disposition des utilisateurs un service informatique -->
@@ -71,6 +81,11 @@
             <div class="flex justify-between">
                 <span class="font-semibold ">Déploiement et tests du site web - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span class="text-red-600 ">Projet TimeTrack - Mars à Juin 2024</span>
+                <a href="#" (click)="enregistrerPreuve('timeTrack2')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
         
@@ -224,7 +239,44 @@
                         <h1 class="text-lg">Mes preuves</h1>  
                         <p>Ici, vous retrouverez toutes les preuves nécessaires liées à mes compétences, constituées : d'explications, de détails, d'images et de fichiers PDF.</p>  
                     </div>
-                }       
+                }   
+                
+                @if(dernierePreuveClique ==='timetrack1'){
+                    <div class="p-4">
+                        <h1>Projet timetrack</h1>
+                        <p class="text-sm text-gray-700">Durant mon projet TimeTrack, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <div class="space-y-2">
+                            <img src="../../assets/timetrackgithub.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/timetracktrello.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </div>
+                    </div>
+                }
+                @if(dernierePreuveClique ==='gestionStage'){
+                    <div class="p-4">
+                        <h1>Projet GestionStage</h1>
+                        <p class="text-sm text-gray-700">Durant mon projet GestionStage, mon équipe et moi avons dû nous répartir le travail et organiser notre temps pour assurer une avancée constante tout au long du projet.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <div class="space-y-2">
+                            <img src="../../assets/gestionstagetrello.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/gestionstagegithub.png" class="w-full h-auto shadow-lg rounded-lg">
+                        </div>
+                    </div>
+                }
+                @if(dernierePreuveClique ==='timeTrack2'){
+                    <div class="p-4">
+                        <h1>Projet TimeTrack</h1>
+                        <p class="text-sm text-gray-700">Durant le projet TimeTrack, mon équipe et moi avons mis à disposition un service pour de potentiels utilisateurs. Nous l'avons donc sécurisé pour éviter d'éventuelles usurpations ou vols d'informations.</p>
+                        <hr class="h-px bg-gray-600 border-0 my-4" />
+                        <div class="space-y-2">
+                            <img src="../../assets/timetracklogin.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/timetracktestlogin.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/timetrackhash.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/timetrackpointage.png" class="w-full h-auto shadow-lg rounded-lg">
+                            <img src="../../assets/timetrackadmin.png   " class="w-full h-auto shadow-lg rounded-lg">
+                        </div>
+                    </div>
+                }
         
     </div>
 </div>
