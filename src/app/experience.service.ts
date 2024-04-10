@@ -42,7 +42,7 @@ export class ExperienceService {
       id: 5,
       year: 'Juillet 2023',
       duree: '2 mois',
-      role: 'Stage en développement web',
+      role: 'ERASMUS :Stage en développement web',
       company: 'Flazio, Sicile',
       description: 'Conception et mise en œuvre de fonctionnalités front-end pour des applications web.',
     },
