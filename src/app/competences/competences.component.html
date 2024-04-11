@@ -8,11 +8,7 @@
                 <span>W3C - Mars 2023</span>
                 <a href="#" (click)="enregistrerPreuve('W3C')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
-            <hr class="h-px bg-gray-400 border-0" />
-            <div class="flex justify-between">
-                <span>RGPD - Octobre 2022</span>
-                <a href="#" (click)="enregistrerPreuve('RGPD')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
-            </div>
+
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
                 <span>Traduction - Juin 2023</span>
@@ -24,7 +20,7 @@
         <div class="bg-gray-200 p-4 rounded-md mb-4">
             <h2 class="text-xl font-semibold text-gray-800 mb-3">B 1.2 - Répondre aux incidents et aux demandes d'assistance et d'évolution</h2>
             <div class="flex justify-between items-center mb-2">
-                <span class=" font-semibold">Stage chez SGA - Janvier à Février 2024</span>
+                <span>Stage chez SGA - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('sgaprincipale')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
@@ -55,22 +51,22 @@
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="font-semibold ">Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
+                <span>Collaboration et gestion de projets chez SGA INDUSTRIES - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('projet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="text-red-600">Projet TimeTrack - Mars à Juin 2024</span>
+                <span>Projet TimeTrack - Mars à Juin 2024</span>
                 <a href="#" (click)="enregistrerPreuve('timetrack1')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="text-red-600 ">Projet gestionStage - Mars à Juin 2024</span>
+                <span>Projet gestionStage - Mars à Juin 2024</span>
                 <a href="#" (click)="enregistrerPreuve('gestionStage')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="font-semibold ">Gestion de projets et suivi des missions - Janvier à Février 2024</span>
+                <span>Gestion de projets et suivi des missions - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('GestionProjet')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
@@ -84,12 +80,12 @@
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="font-semibold ">Déploiement et tests du site web - Janvier à Février 2024</span>
+                <span>Déploiement et tests du site web - Janvier à Février 2024</span>
                 <a href="#" (click)="enregistrerPreuve('deploiement')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between">
-                <span class="text-red-600 ">Projet TimeTrack - Mars à Juin 2024</span>
+                <span>Projet TimeTrack - Mars à Juin 2024</span>
                 <a href="#" (click)="enregistrerPreuve('timeTrack2')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
         </div>
@@ -103,8 +99,13 @@
             </div>
             <hr class="h-px bg-gray-400 border-0" />
             <div class="flex justify-between items-center mb-2">
-                <span>Veille Technologique - Juin 2023 - Mars 2024</span>
+                <span>Veille Technologique - Depuis Janvier 2023</span>
                 <a href="#" (click)="enregistrerPreuve('veille')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
+            </div>
+            <hr class="h-px bg-gray-400 border-0" />
+            <div class="flex justify-between">
+                <span>RGPD - Octobre 2022</span>
+                <a href="#" (click)="enregistrerPreuve('RGPD')" class="text-indigo-600 hover:text-indigo-700 transition duration-300">Preuve</a>
             </div>
            </div>
        
@@ -117,8 +118,10 @@
 
             @if(dernierePreuveClique === 'W3C'){
                 <div class="p-4">
-                    <h1>World Wide Web Consortium</h1>
-                    <p class="text-sm text-gray-700">Durant ma première année de BTS SIO, j'ai découvert ce qu'était le W3C. Par la suite, j'ai pris l'habitude de vérifier mes pages grâce à un site web qui suivait ces règles.</p>
+                    <h1 class="text-lg">World Wide Web Consortium</h1>
+                    <p class="text-sm text-gray-700">Vérifier le respect des règles d’utilisation des ressources numériques</p>
+                    <br/>
+                    <p class="text-sm ">Durant ma première année de BTS SIO, j'ai découvert ce qu'était le W3C. Par la suite, j'ai pris l'habitude de vérifier mes pages grâce à un site web qui suivait ces règles.</p>
                     <hr class="h-px bg-gray-600 border-0 my-4" />
                     <div class="space-y-4">
                         <div class="space-y-2">
@@ -166,7 +169,9 @@
                 @if(dernierePreuveClique ==='Traduction'){
                 <div class="p-4">
                     <h1>Mission de traduction</h1>
-                    <p class="text-sm text-gray-700">Durant mon stage de première année à Flazio, j'ai dû vérifier que la totalité du site était bien traduite en français. Flazio n'étant pas une entreprise française, une légère correction s'imposait. J'ai dû répertorier les erreurs dans un fichier avec plusieurs informations pour les faire parvenir à mon tuteur.</p>
+                    <p class="text-sm text-gray-700">Vérifier le respect des règles d’utilisation des ressources numériques</p>
+                    <br/>
+                    <p class="text-sm ">Durant mon stage de première année à Flazio, j'ai dû vérifier que la totalité du site était bien traduite en français. Flazio n'étant pas une entreprise française, une légère correction s'imposait. J'ai dû répertorier les erreurs dans un fichier avec plusieurs informations pour les faire parvenir à mon tuteur.</p>
                     <hr class="h-px bg-gray-600 border-0 my-4" />
                     <a href="../../assets/traduction.png" target="_blank">
                         <img src="../../assets/traduction.png" class="w-full h-auto shadow-lg rounded-lg">
@@ -193,9 +198,11 @@
                     }
                     
                     @if(dernierePreuveClique === 'SiteWEBFlazio'){
-                    <div class="p-4">
+                    <div class="p-4">                        
                         <h1>Création d'un site web via le CMS Flazio</h1>
-                        <p class="text-sm text-gray-700">Durant mon stage de première année, j'ai eu à utiliser un nouveau CMS pour découvrir plus en détails l'entreprise qui m'accueillait, et ma première mission fut de créer un site web.</p>
+                        <p class="text-sm text-gray-700">Participer à l’évolution d’un site Web exploitant les données de l’organisation.</p>
+                        <br/>
+                        <p class="text-sm ">Durant mon stage de première année, j'ai eu à utiliser un nouveau CMS pour découvrir plus en détails l'entreprise qui m'accueillait, et ma première mission fut de créer un site web.</p>
                         <hr class="h-px bg-gray-600 border-0 my-4" />
                         <a href="https://louvretest.flazio.com/" target="_blank">Lien du site web</a>
                     </div>
@@ -215,7 +222,11 @@
                     @if(dernierePreuveClique === 'GSK'){
                     <div class="p-4">
                         <h1>Projet GSK</h1>
-                        <p class="text-sm text-gray-700">Durant ma première année, j'ai dû travailler sur un projet nommé GSK qui avait pour but de planifier des tâches et de répartir le travail entre plusieurs étudiants.</p>
+                        
+                        <p class="text-sm text-gray-700">Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>
+                        <br />
+
+                        <p class="text-sm ">Durant ma première année, j'ai dû travailler sur un projet nommé GSK qui avait pour but de planifier des tâches et de répartir le travail entre plusieurs étudiants.</p>
                         <hr class="h-px bg-gray-600 border-0 my-4" />
                         <a href="../../assets/gsk.png" target="_blank">
                             <img src="../../assets/gsk.png" class="w-full h-auto shadow-lg rounded-lg">
@@ -226,7 +237,10 @@
                     @if(dernierePreuveClique === 'WEBFinance'){
                     <div class="p-4">
                         <h1>Création d'un site web de gestion financière</h1>
-                        <p class="text-sm text-gray-700">Durant mon stage de première année de BTS SIO, j'ai dû créer un site web retraçant les opérations d'une entreprise, permettant d'avoir une vue plus claire sur les dépenses et les recettes de l'entreprise.</p>
+                        
+                        <p class="text-sm text-gray-700">Analyser les objectifs et les modalités d’organisation d’un projet</p>
+                        <br />
+                        <p class="text-sm ">Durant mon stage de première année de BTS SIO, j'ai dû créer un site web retraçant les opérations d'une entreprise, permettant d'avoir une vue plus claire sur les dépenses et les recettes de l'entreprise.</p>
                         <hr class="h-px bg-gray-600 border-0 my-4" />
                         <a href="../../assets/gestion.png" target="_blank">
                             <img src="../../assets/gestion.png" class="w-full h-auto shadow-lg rounded-lg">
@@ -337,7 +351,10 @@
                         @if(dernierePreuveClique ==='sgaprincipale'){
                             <div class="p-4">
                                 <h1>Stage chez SGA </h1>
-                                <p class="text-sm text-gray-700">Lors de mon stage chez SGA Mobility, j'ai participé au développement et à la mise à jour du site web de l'entreprise. J'étais chargé de traiter les tickets attribués par la supervision pour apporter des modifications et des améliorations spécifiques au site, garantissant ainsi son bon fonctionnement et sa mise à jour continue.</p>
+                                <p class="text-sm text-gray-700">Traiter des demandes concernant les services réseau et système, applicatifs</p>
+                                <br/>
+                                
+                                <p class="text-sm">Lors de mon stage chez SGA Mobility, j'ai participé au développement et à la mise à jour du site web de l'entreprise. J'étais chargé de traiter les tickets attribués par la supervision pour apporter des modifications et des améliorations spécifiques au site, garantissant ainsi son bon fonctionnement et sa mise à jour continue.</p>
                                 <hr class="h-px bg-gray-600 border-0 my-4" />
                                 <a href="../../assets/sgap1.png" target="_blank">
                                     <img src="../../assets/sgap1.png" class="w-full h-auto shadow-lg rounded-lg">

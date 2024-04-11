@@ -26,7 +26,7 @@ export class TypingComponent implements OnInit {
       setTimeout(() => this.typeText(), this.typingSpeed);
     } else {
       // Attendre un peu avant de commencer l'effacement
-      setTimeout(() => this.eraseText(), 2000);
+      setTimeout(() => this.eraseText(), 7000);
     }
   }
 
