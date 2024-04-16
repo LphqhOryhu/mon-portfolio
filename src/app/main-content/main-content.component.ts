@@ -18,6 +18,15 @@ export class MainContentComponent {
   experiences: Experience[] = [];  
   isModalOpen: boolean = false; 
   selectedExperienceId: number | null = null;
+  currentImage: string | null = null;
+
+  toggleImage(imageName: string) {
+    if (this.currentImage === `assets/${imageName}`) {
+      this.currentImage = null;
+    } else {
+      this.currentImage = `assets/${imageName}`;
+    }
+  }
 
   constructor(private experienceService: ExperienceService) {}
 
