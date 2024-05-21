@@ -38,24 +38,29 @@
           <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais niveau B1</p>
-          <p>Baccalauréat STI2D, option Euro</p>
+          <p class="hover:cursor-pointer underline" (click)="toggleImage('Bac.png')">Baccalauréat STI2D, option Euro</p>
           
         </div>
         @if(currentImage){
           <img [src]="currentImage" alt="diploma" class="mx-auto mb-4 rounded-md shadow-lg">
           @if(currentImage === "assets/pix.png"){
             <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/attestation-pix-20231107.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
+              <a href="../../assets/attestation-pix-20231107.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation </a>
             </div>
           }
           @if(currentImage === "assets/moocanssi.png"){
             <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
+              <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation</a>
             </div>
           }
           @if(currentImage === "assets/cmes.png"){
             <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/att_re_Hugo DE BRABANDER.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
+              <a href="../../assets/att_re_Hugo DE BRABANDER.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation </a>
+            </div>
+          }
+          @if(currentImage === "assets/Bac.png"){
+            <div class="flex flex-row space-x-4 justify-center">
+              <a href="../../assets/Hugo_De-Brabander_BAC - Copie.jpg" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir le diplome</a>
             </div>
           }
         }
@@ -76,15 +81,19 @@
               <li class="mb-2">
                 <span>Tailwind CSS</span>
               </li>
+              <br />
+
               <li class="mb-2">
                 <span>JavaScript</span>
               </li>
               <li class="mb-2">
                 <span>TypeScript</span>
               </li>
+              <br />
               <li class="mb-2">
                 <span>Angular</span>
               </li>
+                            
               <li class="mb-2">
                 <span>PHP Symfony</span>
               </li>
@@ -97,14 +106,16 @@
                 <span>SQL</span>
               </li>
               <li class="mb-2">
+                <span>Transact SQL(trigger & procédure stockée)</span>
+              </li>
+              <br />
+              <li class="mb-2">
                 <span>MySQL</span>
               </li>
               <li class="mb-2 ">
                 <span>SQL Server</span>
               </li>
-              <li class="mb-2">
-                <span>Transact SQL(trigger & procédure stockée)</span>
-              </li>
+
             </ul>
           </div>
           <div class="text-left border rounded-md bg-slate-300 mr-20 p-8">
@@ -128,7 +139,7 @@
                 <span>Compréhension en langue Anglaise B2</span>
               </li>
               <li class="mb-2">
-                <span>Base en Allemands</span>
+                <span>Bases en Allemands</span>
               </li>
             </ul>
           </div>
