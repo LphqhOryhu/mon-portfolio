@@ -27,8 +27,7 @@
       @if(selectedExperienceId){
         @if(this.isModalOpen){
           <app-modal [experienceId]="selectedExperienceId"></app-modal>
-          <button class="inline-block mt-4 bg-gray-200 hover:bg-gray-300 rounded-md px-4 py-2" (click)="closeModal()">Fermer</button>
-        }
+       }
       }
     </div>
     <div class="space-y-5">
@@ -38,7 +37,7 @@
           <p class="hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
-          <p>CLES Anglais niveau B1</p>
+          <p class="hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais niveau B1</p>
           <p>Baccalauréat STI2D, option Euro</p>
           
         </div>
@@ -52,6 +51,11 @@
           @if(currentImage === "assets/moocanssi.png"){
             <div class="flex flex-row space-x-4 justify-center">
               <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
+            </div>
+          }
+          @if(currentImage === "assets/cmes.png"){
+            <div class="flex flex-row space-x-4 justify-center">
+              <a href="../../assets/att_re_Hugo DE BRABANDER.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
             </div>
           }
         }
