@@ -1,10 +1,9 @@
 .parallax-container {
-    perspective: 1px;
-    perspective-origin: 50% 50%;
-  }
-  
-  .parallax-image {
-    transform: translateZ(-1px) scale(1.1);
-    will-change: transform;
-  }
-  
+  perspective: 1px;
+  perspective-origin: 50% 50%;
+}
+
+.parallax-image {
+  transform: translateZ(-1px) scale(2);
+  will-change: transform;
+}

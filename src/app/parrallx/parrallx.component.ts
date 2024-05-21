@@ -14,6 +14,7 @@ export class ParrallxComponent implements AfterViewInit, OnDestroy {
 
   onButtonClick() {
     this.globalService.setIsPressed(true);
+    
   }
 
   ngAfterViewInit() {
@@ -33,4 +34,6 @@ export class ParrallxComponent implements AfterViewInit, OnDestroy {
 
     parallaxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(1.1)`;
   }
+
+  
 }
