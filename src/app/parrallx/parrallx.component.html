@@ -1,0 +1,16 @@
+<div class="parallax-container h-screen w-full overflow-hidden relative">
+    <div class="parallax-image absolute inset-0 bg-cover bg-center" style="background-image: url('../../assets/backgroundfirst.jpg'); z-index: 0;"></div>
+    
+    <!-- Centered typing component -->
+    <div class="absolute inset-0 flex justify-center items-center z-10">
+      <div class="text-center px-16">
+        <app-typing class="text-6xl"></app-typing>
+      </div>
+    </div>
+  
+    <!-- Button at the bottom -->
+    <div class="content flex justify-center items-center h-full w-full">
+      <button (click)="onButtonClick()" class="fixed bottom-4 bg-blue-500 text-white px-4 py-2 rounded z-20">Décourvrir mon portfolio</button>
+    </div>
+  </div>
+  

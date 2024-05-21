@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TypingComponent } from '../typing/typing.component';
 import { Experience } from '../models/experience.model';
 import { ExperienceService } from '../experience.service';
 import { Pipe, PipeTransform } from '@angular/core';
@@ -10,7 +9,7 @@ import { ModalComponent } from '../modal/modal.component';
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [TypingComponent, ModalComponent],
+  imports: [ModalComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
