@@ -9,10 +9,10 @@
         À 21 ans, je suis étudiant en BTS SIO spécialité SLAM, mon récent stage en développement web a renforcé ma passion pour la création d'interfaces utilisateur avec JavaScript, HTML, CSS, et Angular. Je suis motivé à me former au développement Back-end et déterminé à continuer d'explorer et contribuer au domaine du développement web.</p>
     </section>
 
-    <div class="ml-20 flex justify-center items-center mb-10 max-w-[90vw] mt-6">
+    <div class="ml-20 flex justify-center items-center mb-10 max-w-[90vw] mt-6 ">
       @for(experience of experiences; track experiences ){
         <div class="flex items-center mr-4" (click)="selectExperience(experience.id)" (click)="openModal(experience.id)">
-          <div class="w-fit rounded-full h-8 p-1 flex items-center justify-center text-sm font-bold"
+          <div class="w-fit rounded-full h-8  flex items-center justify-center text-sm font-bold p-2"
                [class.bg-gray-300]="selectedExperienceId !== experience.id" 
                [class.bg-blue-500]="selectedExperienceId === experience.id">
             {{ experience.year }}
