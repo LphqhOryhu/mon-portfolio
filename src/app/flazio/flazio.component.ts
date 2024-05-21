@@ -11,23 +11,22 @@ import { StageComponent } from '../stage/stage.component';
   styleUrl: './flazio.component.scss'
 })
 export class FlazioComponent implements OnInit  {
-  constructor() { }
-
+  private scrollAmount = 625.6; // La quantité de scroll en pixels
+  
   ngOnInit(): void {
-    // Ajout d'un écouteur d'événements si nécessaire
+    // Initialisation si nécessaire
   }
 
-  @HostListener('window:wheel', ['$event']) onScrollEvent($event: WheelEvent) {
-    const delta = $event.deltaY;
-    let scrollAmount = 660  ; // La quantité de scroll en pixels
-    if (delta > 0) {
-      // Scrolling vers le bas
-      window.scrollBy(0, scrollAmount);
-    } else {
-      // Scrolling vers le haut
-      window.scrollBy(0, -scrollAmount);
-    }
-    $event.preventDefault();
+  @HostListener('window:wheel', ['$event'])
+  onScrollEvent($event: WheelEvent): void {
+    $event.preventDefault(); // Empêche le scroll par défaut pour éviter les doubles mouvements
+    
+    const direction = $event.deltaY > 0 ? 1 : -1; // Détermine la direction du scroll
+    const targetScrollPosition = window.pageYOffset + (this.scrollAmount * direction);
+    
+    window.scrollTo({
+      top: targetScrollPosition,
+      behavior: 'smooth' // Fournit un effet de défilement fluide
+    });
   }
-
 }

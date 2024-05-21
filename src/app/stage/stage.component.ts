@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { FlazioComponent } from '../flazio/flazio.component';
 import { SgaComponent } from '../sga/sga.component';
 import { TimeTrackComponent } from '../time-track/time-track.component';
@@ -75,4 +75,23 @@ export class StageComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Fait remonter la page en haut de manière fluide
   }
 
-}
+  private scrollAmount = 625.6; // La quantité de scroll en pixels
+  
+  ngOnInit(): void {
+    // Initialisation si nécessaire
+  }
+
+  @HostListener('window:wheel', ['$event'])
+  onScrollEvent($event: WheelEvent): void {
+    $event.preventDefault(); // Empêche le scroll par défaut pour éviter les doubles mouvements
+    
+    const direction = $event.deltaY > 0 ? 1 : -1; // Détermine la direction du scroll
+    const targetScrollPosition = window.pageYOffset + (this.scrollAmount * direction);
+    
+    window.scrollTo({
+      top: targetScrollPosition,
+      behavior: 'smooth' // Fournit un effet de défilement fluide
+    });
+
+  }
+} 
