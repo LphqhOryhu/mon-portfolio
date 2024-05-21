@@ -5,9 +5,8 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit, OnDestroy {
   isVisible: boolean = false;
@@ -31,11 +30,16 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   showComponent(component: string): void {
     this.sidebarService.toggleSidebar(); 
-    this.sidebarService.updateComponentToShow(component); 
+    this.sidebarService.updateComponentToShow(component);
+    this.scrollToTop(); // Appel de la fonction scrollToTop pour remonter la page
     console.log('Component to show: ', component);
   }
 
   fermerBarreLaterale() {
     this.sidebarService.onCloseSidebar();
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Fait remonter la page en haut de manière fluide
   }
 }

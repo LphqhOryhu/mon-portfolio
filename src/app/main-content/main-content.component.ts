@@ -40,7 +40,6 @@ export class MainContentComponent {
     this.selectedExperienceId = experienceId;
     // Ouvrir la modal
     this.isModalOpen = true;  
-    
   }
 
   // Assurez-vous d'avoir une méthode pour fermer la modal qui réinitialise selectedExperienceId
@@ -49,14 +48,16 @@ export class MainContentComponent {
     // Autres actions de nettoyage si nécessaire
   }
 
+  
+
   selectExperience(experienceId: number): void {
-    if (this.selectedExperienceId === experienceId) {
+    if (this.selectedExperienceId !== experienceId) {
       // Si l'expérience déjà sélectionnée est cliquée à nouveau, fermez-la
       this.closeModal();
     } else {
       // Sinon, ouvrez la modal pour la nouvelle expérience
       this.selectedExperienceId = experienceId;
-      this.isModalOpen = true;
+
     }
 }
 

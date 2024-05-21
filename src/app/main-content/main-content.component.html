@@ -35,7 +35,7 @@
       <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-slate-400 rounded-md mx-40">
         <h2 class="text-3xl font-semibold mb-4 ">Diplômes & Certifications</h2>
         <div>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('image-anssi.jpg')" >ANSSI</p>
+          <p class="hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
           <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
           <p>CLES Anglais niveau B1</p>
@@ -47,6 +47,11 @@
           @if(currentImage === "assets/pix.png"){
             <div class="flex flex-row space-x-4 justify-center">
               <a href="../../assets/attestation-pix-20231107.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
+            </div>
+          }
+          @if(currentImage === "assets/moocanssi.png"){
+            <div class="flex flex-row space-x-4 justify-center">
+              <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation PIX</a>
             </div>
           }
         }

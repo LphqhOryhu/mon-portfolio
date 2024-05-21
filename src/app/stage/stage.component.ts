@@ -22,6 +22,7 @@ export class StageComponent {
 
   selectOption(option: string) {
     this.selectionMade = true;
+    this.scrollToTop(); // Appel de la fonction scrollToTop pour remonter la page
     if (option === 'Flazio') {
       this.openModalFlazio();
     } else if (option === 'SGA') {
@@ -31,7 +32,7 @@ export class StageComponent {
       this.openModalTimeTrack();
     }
     else if (option === 'gestionStage') {
-      this.openModalTimeTrack();
+      this.openModalgestionStage();
     }
   }
 
@@ -47,6 +48,7 @@ export class StageComponent {
 
   closeModals() {
     this.resetModals();
+    this.scrollToTop(); // Appel de la fonction scrollToTop pour remonter la page
     this.selectionMade = false;
   }
 
@@ -68,4 +70,9 @@ export class StageComponent {
     this.resetModals();
     this.showModalgestionStage = true;
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Fait remonter la page en haut de manière fluide
+  }
+
 }
