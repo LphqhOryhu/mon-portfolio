@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SidebarService } from '../sidebar.service';
 import { Subscription } from 'rxjs';
-
 @Component({
   selector: 'app-sidebar',
   standalone: true,
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  styleUrls: ['./sidebar.component.scss'],
+  imports: [],
 })
 export class SidebarComponent implements OnInit, OnDestroy {
   isVisible: boolean = false;

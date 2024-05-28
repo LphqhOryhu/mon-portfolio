@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { HeaderComponent } from './header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -22,7 +21,6 @@ import { GlobalService } from './global.service';
     CommonModule,
     DocumentComponent,
     RouterOutlet,
-    BreadcrumbComponent,
     HeaderComponent,
     MainContentComponent,
     SidebarComponent,

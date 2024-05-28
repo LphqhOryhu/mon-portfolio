@@ -1,4 +1,4 @@
-<header class="bg-blue-950 shadow-md p-4 fixed w-full">
+<header class="bg-[#01106D] shadow-md p-4 fixed w-full">
   <div class="flex items-center justify-end">
     <div (mouseenter)="ouvrirBarreLaterale()" class="sidebar-toggle-area">
       <aside class="h-screen w-16 space-y-6 py-7 px-2 mt-[67px] inset-y-0 left-0  md:relative md:translate-x-0 transition duration-200 ease-in-out">
@@ -37,7 +37,21 @@
     </div>
 
 
-
+    <div class="text-white flex-grow text-center ml-48">
+      <h1>@if(currentComponent==='main'){
+        Acceuil}
+      @else if(currentComponent==='stage'){
+        Réalisations professionnelles}
+      @else if(currentComponent==='compétences'){
+        Compétences}
+      @else if(currentComponent==='veille'){
+        Veille}
+      @else if(currentComponent==='document'){
+        Documents}
+      
+      
+      </h1>
+    </div>
     <div class="flex flex-row divide-x-2 gap-x-5">
       <a class="pl-5" href="https://github.com/LphqhOryhu" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 496 512">

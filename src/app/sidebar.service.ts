@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class SidebarService {
   private sidebarVisible = new BehaviorSubject<boolean>(false);
   private componentToShow = new BehaviorSubject<string>('main'); // Ajout du composant à afficher
-  
+
   public sidebarVisibility$ = this.sidebarVisible.asObservable();
   public componentToShow$ = this.componentToShow.asObservable(); // Exposez le composant à afficher
 
@@ -21,15 +21,13 @@ export class SidebarService {
 
   onToggleSidebar(): void {
     this.toggleSidebar();
-    let state:string = 'open';
+    let state: string = 'open';
     console.log(state);
   }
 
   onCloseSidebar(): void {
     this.toggleSidebar();
-    let state:string='close';
+    let state: string = 'close';
     console.log(state);
   }
 }
-
-
