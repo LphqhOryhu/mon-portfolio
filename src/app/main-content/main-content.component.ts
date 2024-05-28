@@ -17,7 +17,7 @@ export class MainContentComponent {
   experiences: Experience[] = [];  
   isModalOpen: boolean = false; 
   selectedExperienceId: number | null = null;
-  currentImage: string | null = null;
+  currentImage: string  | null = "assets/moocanssi.png";
 
   toggleImage(imageName: string) {
     if (this.currentImage === `assets/${imageName}`) {

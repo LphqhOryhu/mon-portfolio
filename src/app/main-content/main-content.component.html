@@ -13,8 +13,8 @@
       @for(experience of experiences; track experiences ){
         <div class="flex items-center mr-4" (click)="selectExperience(experience.id)" (click)="openModal(experience.id)">
           <div class="w-fit rounded-full h-8  flex items-center justify-center text-sm font-bold p-2"
-               [class.bg-gray-300]="selectedExperienceId !== experience.id" 
-               [class.bg-blue-500]="selectedExperienceId === experience.id">
+               [class.bg-blue-200]="selectedExperienceId !== experience.id" 
+               [class.bg-blue-400]="selectedExperienceId === experience.id">
             {{ experience.year }}
           </div>
         </div>
@@ -31,124 +31,101 @@
       }
     </div>
     <div class="space-y-5">
-      <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-slate-400 rounded-md mx-40">
+      <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-blue-300 rounded-md mx-40">
         <h2 class="text-3xl font-semibold mb-4 ">Diplômes & Certifications</h2>
-        <div>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais niveau B1</p>
-          <p class="hover:cursor-pointer underline" (click)="toggleImage('Bac.png')">Baccalauréat STI2D, option Euro</p>
+        <div class="flex flex-row justify-between px-40">
+          <div class=" flex flex-col items-center justify-center">
+            <p class="hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
+            <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
+            <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
+            <p class="hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais  B1</p>
+            <p class="hover:cursor-pointer underline" (click)="toggleImage('Bac.png')">Baccalauréat STI2D</p>
+            
+          </div>
+          @if(currentImage)
+          {
+              <div class="text-center">
+                  <img [src]="currentImage" alt="diploma" class="max-w-md mx-auto mb-4 rounded-md shadow-lg">
+                  
+                  @if(currentImage === "assets/pix.png")
+                  {
+                      <div class="flex flex-row space-x-4 justify-center">
+                          <a href="../../assets/attestation-pix-20231107.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation</a>
+                      </div>
+                  }
+                  @if(currentImage === "assets/moocanssi.png")
+                  {
+                      <div class="flex flex-row space-x-4 justify-center">
+                          <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation</a>
+                      </div>
+                  }
+                  @if(currentImage === "assets/cmes.png")
+                  {
+                      <div class="flex flex-row space-x-4 justify-center">
+                          <a href="../../assets/att_re_Hugo DE BRABANDER.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation</a>
+                      </div>
+                  }
+                  @if(currentImage === "assets/Bac.png")
+                  {
+                      <div class="flex flex-row space-x-4 justify-center">
+                          <a href="../../assets/Hugo_De-Brabander_BAC - Copie.jpg" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir le diplôme</a>
+                      </div>
+                  }
+              </div>
+          }
           
         </div>
-        @if(currentImage){
-          <img [src]="currentImage" alt="diploma" class="mx-auto mb-4 rounded-md shadow-lg">
-          @if(currentImage === "assets/pix.png"){
-            <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/attestation-pix-20231107.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation </a>
-            </div>
-          }
-          @if(currentImage === "assets/moocanssi.png"){
-            <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/moocanssi.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation</a>
-            </div>
-          }
-          @if(currentImage === "assets/cmes.png"){
-            <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/att_re_Hugo DE BRABANDER.pdf" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir l'attestation </a>
-            </div>
-          }
-          @if(currentImage === "assets/Bac.png"){
-            <div class="flex flex-row space-x-4 justify-center">
-              <a href="../../assets/Hugo_De-Brabander_BAC - Copie.jpg" target="_blank" class="inline-block bg-white text-black py-2 px-4 rounded text-center">Voir le diplome</a>
-            </div>
-          }
-        }
       </section>
 
-      <section id="skills" class="py-10 px-4 md:px-8 lg:px-16  mx-40  border bg-slate-400 rounded-md">
+      <section id="skills" class="py-10 px-4 md:px-8 lg:px-16 mx-40 border bg-blue-300 rounded-md">
         <h2 class="text-3xl font-semibold mb-4 text-center">Compétences</h2>
         <div class="grid grid-cols-2 gap-4">
-          <div class="text-left center border rounded-md bg-slate-300 mr-20 p-8">
+          <div class="skill-card text-left border rounded-md bg-blue-200 mr-20 p-8">
             <h3 class="text-lg font-semibold mb-2">Développement Web</h3>
             <ul class="list-none">
-              <li class="mb-2">
-                <span>HTML</span>
-              </li>
-              <li class="mb-2">
-                <span>CSS</span>
-              </li>
-              <li class="mb-2">
-                <span>Tailwind CSS</span>
-              </li>
+              <li class="mb-2"><span>HTML</span></li>
+              <li class="mb-2"><span>CSS</span></li>
+              <li class="mb-2"><span>Tailwind CSS</span></li>
               <br />
-
-              <li class="mb-2">
-                <span>JavaScript</span>
-              </li>
-              <li class="mb-2">
-                <span>TypeScript</span>
-              </li>
+              <li class="mb-2"><span>JavaScript</span></li>
+              <li class="mb-2"><span>TypeScript</span></li>
               <br />
-              <li class="mb-2">
-                <span>Angular</span>
-              </li>
-                            
-              <li class="mb-2">
-                <span>PHP Symfony</span>
-              </li>
+              <li class="mb-2"><span>Angular</span></li>
+              <li class="mb-2"><span>PHP Symfony</span></li>
             </ul>
           </div>
-          <div class="text-right border rounded-md bg-slate-300 ml-20 p-8">
-            <h3 class="text-lg font-semibold mb-2 ">Bases de données</h3>
+          <div class="skill-card text-right border rounded-md bg-blue-200 ml-20 p-8">
+            <h3 class="text-lg font-semibold mb-2">Bases de données</h3>
             <ul class="list-none">
-              <li class="mb-2">
-                <span>SQL</span>
-              </li>
-              <li class="mb-2">
-                <span>Transact SQL(trigger & procédure stockée)</span>
-              </li>
+              <li class="mb-2"><span>SQL</span></li>
+              <li class="mb-2"><span>Transact SQL(trigger & procédure stockée)</span></li>
               <br />
-              <li class="mb-2">
-                <span>MySQL</span>
-              </li>
-              <li class="mb-2 ">
-                <span>SQL Server</span>
-              </li>
-
+              <li class="mb-2"><span>MySQL</span></li>
+              <li class="mb-2"><span>SQL Server</span></li>
             </ul>
           </div>
-          <div class="text-left border rounded-md bg-slate-300 mr-20 p-8">
+          <div class="skill-card text-left border rounded-md bg-blue-200 mr-20 p-8">
             <h3 class="text-lg font-semibold mb-2">Développement Logiciel</h3>
             <ul class="list-none">
-              <li class="mb-2">
-                <span>C#</span>
-              </li>
-              <li class="mb-2">
-                <span>.NET</span>
-              </li>
+              <li class="mb-2"><span>C#</span></li>
+              <li class="mb-2"><span>.NET</span></li>
             </ul>
           </div>
-          <div class="text-right border rounded-md bg-slate-300 ml-20 p-8">
+          <div class="skill-card text-right border rounded-md bg-blue-200 ml-20 p-8">
             <h3 class="text-lg font-semibold mb-2">Linguistique</h3>
             <ul class="list-none">
-              <li class="mb-2">
-                <span>Expression en langue Anglaise B2</span>
-              </li>
-              <li class="mb-2">
-                <span>Compréhension en langue Anglaise B2</span>
-              </li>
-              <li class="mb-2">
-                <span>Bases en Allemands</span>
-              </li>
+              <li class="mb-2"><span>Expression en langue Anglaise B2</span></li>
+              <li class="mb-2"><span>Compréhension en langue Anglaise B2</span></li>
+              <li class="mb-2"><span>Bases en Allemands</span></li>
             </ul>
           </div>
         </div>
       </section>
+      
 
 
       <section id="soft-skills-interests" class="py-10 px-4  md:flex md:justify-between md:items-start md:px-8 lg:px-44 text-left">
-        <div class="mb-8 md:mb-0 rounded-md bg slate-400">
+        <div class="mb-8 md:mb-0 rounded-md bg-blue-300 pr-28 pl-12 py-10">
           <h2 class="text-3xl font-semibold mb-4">Soft skills</h2>
           <div class="text-left">
             <p>Créativité</p>
@@ -156,7 +133,7 @@
             <p>Désir d'apprendre</p>
           </div>
         </div>
-        <div class="rounded-md bg slate-400">
+        <div class="rounded-md  bg-blue-300 pl-28 pr-12 py-10">
           <h2 class="text-3xl font-semibold mb-4 text-right">Centres d'intérêts</h2>
           <div class="text-right">
             <p>Art</p>
