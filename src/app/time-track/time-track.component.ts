@@ -7,7 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./time-track.component.scss']
 })
 export class TimeTrackComponent implements OnInit {
-  private scrollAmount = 625.6; // Adapt this value as needed
+  private scrollAmount = 784; // Adapt this value as needed
 
   ngOnInit(): void {
     // Any initialization code goes here

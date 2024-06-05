@@ -11,7 +11,7 @@ import { StageComponent } from '../stage/stage.component';
   styleUrl: './flazio.component.scss'
 })
 export class FlazioComponent implements OnInit  {
-  private scrollAmount = 625.6; // La quantité de scroll en pixels
+  private scrollAmount = 784; // La quantité de scroll en pixels
   
   ngOnInit(): void {
     // Initialisation si nécessaire

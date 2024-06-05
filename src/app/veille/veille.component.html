@@ -1,11 +1,13 @@
 <div class="mt-20 ml-20 max-w-[1250px]">
-  <div class="text-lg pb-2">Introduction au Pentest</div>
+  <div class="max-w-[75%]">
+  <div class="text-lg pb-2 max-w-80 underline">Introduction au Pentest</div>
   
   Le pentest, ou test d'intrusion, est une évaluation de sécurité proactive visant à identifier et à exploiter les vulnérabilités dans les systèmes informatiques, les réseaux et les applications. 
   <br />
   L'objectif principal est de découvrir les failles de sécurité avant que des acteurs malveillants ne les exploitent, afin de renforcer les défenses et d'améliorer la posture de sécurité.
 
 
+</div>
 </div>
 
 <div class="fixed right-16 -top-[10px] border bg-[#01106D] rounded-lg text-white h-fit mt-20 flex flex-row items-center justify-between p-4 w-fit">
@@ -112,8 +114,7 @@
     
       @for (veille of veilles; track veilles) {
         @if(veille.bornage === selectedBornage){
-          <div class="border rounded-lg shadow-lg bg-white p-4 ">
-            
+          <div class="border-4 rounded-lg shadow-lg bg-white p-4 ">
             <h3 class="text-xl font-bold text-gray-800">{{ veille.titre }}</h3>
             <div class="flex justify-between mb-2">
                 <p class="mt-1 text-gray-600"><strong>Auteur:</strong> {{ veille.auteur }}</p>

@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrl: './gestion-stage.component.scss'
 })
 export class GestionStageComponent {
-  private scrollAmount = 625.6; // Adapt this value as needed
+  private scrollAmount = 784; // Adapt this value as needed
 
   ngOnInit(): void {
     // Any initialization code goes here

@@ -75,7 +75,7 @@ export class StageComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Fait remonter la page en haut de manière fluide
   }
 
-  private scrollAmount = 625.6; // La quantité de scroll en pixels
+  private scrollAmount = 784; // La quantité de scroll en pixels
   
   ngOnInit(): void {
     // Initialisation si nécessaire

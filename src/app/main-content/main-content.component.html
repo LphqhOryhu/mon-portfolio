@@ -31,21 +31,21 @@
       }
     </div>
     <div class="space-y-5">
-      <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-blue-300 rounded-md mx-40">
+      <section id="diplomas" class="py-10 px-4 md:px-8 lg:px-16 center text-center  border bg-blue-300 rounded-md mx-20">
         <h2 class="text-3xl font-semibold mb-4 ">Diplômes & Certifications</h2>
         <div class="flex flex-row justify-between px-40">
-          <div class=" flex flex-col items-center justify-center">
-            <p class="hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
-            <p class="hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
-            <p class="hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
-            <p class="hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais  B1</p>
-            <p class="hover:cursor-pointer underline" (click)="toggleImage('Bac.png')">Baccalauréat STI2D</p>
+          <div class=" flex flex-col items-center justify-center mr-24 space-y-2">
+            <p class="border bg-blue-200 p-2 rounded-lg hover:cursor-pointer underline" (click)="toggleImage('moocanssi.png')" >ANSSI</p>
+            <p class="border bg-blue-200 p-2 rounded-lg hover:cursor-pointer underline" (click)="toggleImage('rgpd.png')" >RGPD</p>
+            <p class="border bg-blue-200 p-2 rounded-lg hover:cursor-pointer underline" (click)="toggleImage('pix.png')" >PIX</p>
+            <p class="border bg-blue-200 p-2 rounded-lg hover:cursor-pointer underline" (click)="toggleImage('cmes.png')">CLES Anglais  B1</p>
+            <p class="border bg-blue-200 p-2 rounded-lg hover:cursor-pointer underline" (click)="toggleImage('Bac.png')">Baccalauréat STI2D</p>
             
           </div>
           @if(currentImage)
           {
               <div class="text-center">
-                  <img [src]="currentImage" alt="diploma" class="max-w-md mx-auto mb-4 rounded-md shadow-lg">
+                  <img [src]="currentImage" alt="diploma" class="max-w-sm mx-auto mb-4 rounded-md shadow-lg">
                   
                   @if(currentImage === "assets/pix.png")
                   {
@@ -94,7 +94,7 @@
               <li class="mb-2"><span>PHP Symfony</span></li>
             </ul>
           </div>
-          <div class="skill-card text-right border rounded-md bg-blue-200 ml-20 p-8">
+          <div class="skill-card text-right border rounded-md bg-blue-200 p-8">
             <h3 class="text-lg font-semibold mb-2">Bases de données</h3>
             <ul class="list-none">
               <li class="mb-2"><span>SQL</span></li>
